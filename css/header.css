@@ -1,0 +1,62 @@
+.header{
+	background-color: #eee;
+	/*padding: 0;*/
+	padding: 0 10%;
+	margin-bottom: 10px;
+}
+
+.logo{
+	background-color: #ed3237;
+}
+
+.logo h3{
+	color: white;
+	font-family: 'Bungee Inline', cursive;
+	padding-top: 18px;
+}
+
+.search{
+	padding: 18px;
+	background-color: #ed3237;
+}
+
+.search button{
+	background-color: transparent;
+	border: 0px;
+	float: right;
+    position: relative;
+    /* margin-right: -39px; */
+    margin-top: -25px;
+    margin-right: 5px;
+}
+
+#txt-search{
+	padding: 0px 25px 0 5px;
+	padding-left: 5px;
+	width: 100%;
+	outline: none;
+	border: 1px solid #eee;
+}
+
+.menu{
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.menu > li{
+	display: inline-block;
+	margin: auto 10px;
+}
+
+.menu > li{
+	text-align: center;
+	padding: 5px 10px;
+}
+
+.menu p{
+	margin-bottom: 5px;
+}
+
+.menu i{
+	display: block;
+}
