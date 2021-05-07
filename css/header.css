@@ -39,6 +39,7 @@
 }
 
 .menu{
+	display: inline-block;
 	margin-bottom: 0;
 	padding: 0;
 }
@@ -60,3 +61,29 @@
 .menu i{
 	display: block;
 }
+
+.user{
+	float: right;
+    margin: 10px 0;
+}
+
+.user i{
+	font-size: 18px;
+}
+
+.acction-user{
+	background-color: #ed3237;
+	color: white;
+}
+
+.acction-user:hover{
+	background-color: #ed3237;
+	color: white;
+}
+
+@media only screen and (max-width: 991px) {
+  	.header{
+  		padding: 0 3%;
+	}
+}
+
