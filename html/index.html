@@ -5,6 +5,7 @@
 	<title>đạt ngu</title>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css">
 	<script type="text/javascript" scr="../js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../js/popper.min.js"></script>
 	<script type="text/javascript" src="../js/bootstrap/bootstrap.min.js"></script>
 	<script src="https://kit.fontawesome.com/e3ed4ab9af.js" crossorigin="anonymous"></script>
     
@@ -12,112 +13,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Jura:wght@700&family=Oi&family=Pacifico&family=Prompt&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../css/header.css">
 	<link rel="stylesheet" type="text/css" href="../css/footer.css">
-	<style type="text/css">
-		*{
-			padding: 0;
-			margin: 0;
-			box-sizing: border-box;
-		}
-
-		a{
-			text-decoration: none;
-			color: black;
-		}
-
-		a:hover{
-			color: #ed3237;
-		}
-
-		
-
-		.main{
-			padding: 0 50px;
-		}
-
-		.main > div{
-			padding: 10px;
-			margin: 10px auto;
-			text-align: center;
-		}
-
-		.list-khuyenmai{
-			text-align: center;
-		}
-
-		.list-khuyenmai img{
-			width: 80%;
-		}
-
-		.list-khuyenmai p{
-			margin: 5px auto;
-			font-family: 'Prompt', sans-serif;
-		}
-
-		.khuyenmai{
-			border: 2px solid #ed3237;
-		}
-
-		.khuyenmai > div > h4{
-			padding-bottom: 5px;
-			margin: 5px auto 25px;
-		    display: inline-block;
-		    border-bottom: 2px solid #ed3237;
-		    font-family: 'Jura', sans-serif;
-		}
-
-		.before-price{
-			text-decoration: line-through;
-		}
-
-		.after-price{
-			color: #ed3237;
-		}
-
-		.product{
-			border: 2px solid #eee;
-		}
-
-		.product > div > h4{
-			padding-bottom: 5px;
-			margin: 5px auto 25px;
-		    display: inline-block;
-		    border-bottom: 2px solid #ed3237;
-		    font-family: 'Jura', sans-serif;
-		}
-
-		.list-product img{
-			width: 80%;
-		}
-
-		.list-product p{
-			margin: 5px auto;
-			font-family: 'Prompt', sans-serif;
-		}
-		
-		.item{
-			padding: 5px 10px;
-		}
-
-		.item:hover{
-			background-color: #eee;
-		}
-
-		.item p{
-			text-align: left;
-		} 
-
-		.samsung{
-			border: 2px solid #ed3237;
-		}
-
-		@media only screen and (max-width: 991px) {
-		  	.space{
-		  		display: none;
-			}
-		}
-		
-		
-	</style>
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body >
 	<!-- header -->
@@ -134,11 +30,21 @@
 		</div>
 		<div class="col-xl-6 col-sm-12">
 			<ul class="menu">
-				<li><a href="#"><i class="fab fa-apple" style="font-size: 25px;"></i>Apple</a></li>
-				<li><a href="#"><i class="fas fa-mobile-alt" style="font-size: 20px;"></i>Điện thoại</a></li>
-				<li><a href="#"><i class="fas fa-headphones-alt" style="font-size: 21px;"></i>Phụ kiện</a></li>
-				<li><a href="#"><i class="far fa-newspaper" style="font-size: 21px;"></i>Tin tức</a></li>
+				<li><a href="apple.html"><i class="fab fa-apple" style="font-size: 25px;"></i>Apple</a></li>
+				<li><a href="samsung.html"><i class="fas fa-mobile-alt" style="font-size: 20px;"></i>Samsung</a></li>
+				<li><a href="phukien.html"><i class="fas fa-headphones-alt" style="font-size: 21px;"></i>Phụ kiện</a></li>
+				<li><a href="tintuc.html"><i class="far fa-newspaper" style="font-size: 21px;"></i>Tin tức</a></li>
 			</ul>
+			<div class="btn-group user">
+				<button type="button" class="btn dropdown-toggle acction-user" data-bs-toggle="dropdown" aria-expanded="false">
+					Xin chào
+				</button>
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="dangky.html"><i class="fas fa-user-plus"></i> Đăng ký</a></li>
+					<li><a class="dropdown-item" href="dangnhap.html"><i class="fas fa-sign-in-alt" style="margin-right: 3px;"></i> Đăng nhập</a></li>
+					<li><a class="dropdown-item" href="giohang.html"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a></li>
+				</ul>
+			</div>
 		</div>
 	</div>
 	<!-- end header -->
@@ -147,7 +53,36 @@
 		<!-- banner -->
 		<div class="row banner">
 			<div class="col-lg-8">
-				<img src="../images/BÌA-IP-12-1.png" style="width: 100%; height: 100%;">
+				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-indicators">
+						<button style="background-color: black;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+						<button style="background-color: black;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+						<button style="background-color: black;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="../images/BÌA-IP-12-1.png" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="../images/GALAXY-S21-6.png" class="d-block w-100" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="../images/BÌA-STAR-5 (1).png" class="d-block w-100" alt="...">
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+						<!-- <span class="carousel-control-prev-icon" 
+							aria-hidden="true"></span> -->
+						<i class="fas fa-chevron-left" style="color: black;font-size: 30px;"></i>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+						<i class="fas fa-chevron-right" style="color: black;font-size: 30px;"></i>
+						<!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+				<!-- <img src="../images/BÌA-IP-12-1.png" style="width: 100%; height: 100%;"> -->
 			</div>
 			<div class="col-lg-4">
 				<div class="row">
@@ -168,10 +103,10 @@
 			<div class="row list-khuyenmai">
 				<div class="col-lg-1 space"></div>
 				<div class="col-lg-2 col-sm-6">
-					<a href="#">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/oppo-a31-2020-128gb-trang-460x400-400x460-160x160.png">
 					</a>
-					<p><a href="">Oppo A31</a></p>
+					<p><a href="chitietsanpham.html">Oppo A31</a></p>
 					<p>
 						<span class="before-price">6.000.000<sup>đ</sup></span>
 						<span class="after-price">4.890.000<sup>đ</sup></span>
@@ -179,10 +114,10 @@
 					
 				</div>
 				<div class="col-lg-2 col-sm-6">
-					<a href="#">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/oppo-reno4-xanh-640x640-160x160.png">
 					</a>
-					<p><a href="">Oppo Reno 4</a></p>
+					<p><a href="chitietsanpham.html">Oppo Reno 4</a></p>
 					<p>
 						<span class="before-price">7.000.000<sup>đ</sup></span>
 						<span class="after-price">6.890.000<sup>đ</sup></span>
@@ -190,10 +125,10 @@
 					
 				</div>
 				<div class="col-lg-2 col-sm-6">
-					<a href="#">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/realme-c11-095320-035343-400x460-160x160.png">
 					</a>
-					<p><a href="">Realme C11</a></p>
+					<p><a href="chitietsanpham.html">Realme C11</a></p>
 					<p>
 						<span class="before-price">3.000.000<sup>đ</sup></span>
 						<span class="after-price">2.690.000<sup>đ</sup></span>
@@ -201,10 +136,10 @@
 					
 				</div>
 				<div class="col-lg-2 col-sm-6">
-					<a href="#">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/samsung-a51-xanh-160x160.png">
 					</a>
-					<p><a href="">Samsung A51</a></p>
+					<p><a href="chitietsanpham.html">Samsung A51</a></p>
 					<p>
 						<span class="before-price">7.000.000<sup>đ</sup></span>
 						<span class="after-price">6.150.000<sup>đ</sup></span>
@@ -212,10 +147,10 @@
 					
 				</div>
 				<div class="col-lg-2 col-sm-6">
-					<a href="#">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/samsung-galaxy-a11-600x600-3-600x600-160x160.png">
 					</a>
-					<p><a href="">Samsung Galaxy A11</a></p>
+					<p><a href="chitietsanpham.html">Samsung Galaxy A11</a></p>
 					<p>
 						<span class="before-price">4.000.000<sup>đ</sup></span>
 						<span class="after-price">2.890.000<sup>đ</sup></span>
@@ -226,57 +161,58 @@
 
 			</div>
 		</div>
+		<!-- apple -->
 		<div class="row product apple">
 			<div>
 				<h4>Apple</h4>
 			</div>
 			<div class="row list-product">
 				<div class="col-lg-1 space"></div>
-				<div class="col-lg-2 item col-sm-6">
-					<a href="#">
+				<div class="col-lg-2 col-md-4 item col-sm-6">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/iPhone-12-mini-đỏ-180x180.png">
 					</a>
-					<p><a href="">iPhone 12 Mini 64GB (Hàng công ty VN/A)</a></p>
+					<p><a href="chitietsanpham.html">iPhone 12 Mini 64GB (Hàng công ty VN/A)</a></p>
 					<p>
 						<span class="after-price">4.890.000<sup>đ</sup></span>
 					</p>
 					
 				</div>
-				<div class="col-lg-2 item col-sm-6">
-					<a href="#">
+				<div class="col-lg-2 col-md-4 item col-sm-6">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/iPhone-12-mini-trang-160x160.png">
 					</a>
-					<p><a href="">iPhone 12 Mini 128GB (Hàng công ty VN/A)</a></p>
+					<p><a href="chitietsanpham.html">iPhone 12 Mini 128GB (Hàng công ty VN/A)</a></p>
 					<p>
 						<span class="after-price">6.890.000<sup>đ</sup></span>
 					</p>
 					
 				</div>
-				<div class="col-lg-2 item col-sm-6">
-					<a href="#">
+				<div class="col-lg-2 col-md-4 item col-sm-6">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/iPhone-12-64GB-blue-160x160.png">
 					</a>
-					<p><a href="">iPhone 12 64GB (Hàng công ty VN/A)</a></p>
+					<p><a href="chitietsanpham.html">iPhone 12 64GB (Hàng công ty VN/A)</a></p>
 					<p>
 						<span class="after-price">2.690.000<sup>đ</sup></span>
 					</p>
 					
 				</div>
-				<div class="col-lg-2 item col-sm-6">
-					<a href="#">
+				<div class="col-lg-2 col-md-4 item col-sm-6">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/iPhone-12-64GB-Green-160x160.png">
 					</a>
-					<p><a href="">iPhone 12 128GB (Hàng công ty VN/A)</a></p>
+					<p><a href="chitietsanpham.html">iPhone 12 128GB (Hàng công ty VN/A)</a></p>
 					<p>
 						<span class="after-price">6.150.000<sup>đ</sup></span>
 					</p>
 					
 				</div>
-				<div class="col-lg-2 item col-sm-6">
-					<a href="#">
+				<div class="col-lg-2 col-md-4 item col-sm-6">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/iPhone-12-mini-trang-160x160 (1).png">
 					</a>
-					<p><a href="">iPhone 12 256GB (Hàng công ty VN/A)</a></p>
+					<p><a href="chitietsanpham.html">iPhone 12 256GB (Hàng công ty VN/A)</a></p>
 					<p>
 						<span class="after-price">2.890.000<sup>đ</sup></span>
 					</p>
@@ -284,51 +220,51 @@
 				</div>
 				<div class="col-lg-1 space"></div>
 				<div class="col-lg-1 space"></div>
-				<div class="col-lg-2 item col-sm-6">
-					<a href="#">
+				<div class="col-lg-2 col-md-4 item col-sm-6">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/iPhone-12-Pro-Max-128GB-den-160x160.png">
 					</a>
-					<p><a href="">iPhone 12 Pro 128GB (Hàng công ty VN/A)</a></p>
+					<p><a href="chitietsanpham.html">iPhone 12 Pro 128GB (Hàng công ty VN/A)</a></p>
 					<p>
 						<span class="after-price">4.890.000<sup>đ</sup></span>
 					</p>
 					
 				</div>
-				<div class="col-lg-2 item col-sm-6">
-					<a href="#">
+				<div class="col-lg-2 col-md-4 item col-sm-6">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/iPhone-12-Pro-Max-128GB-Gold-160x160.png">
 					</a>
-					<p><a href="">iPhone 12 Pro 256GB (Hàng công ty VN/A)</a></p>
+					<p><a href="chitietsanpham.html">iPhone 12 Pro 256GB (Hàng công ty VN/A)</a></p>
 					<p>
 						<span class="after-price">6.890.000<sup>đ</sup></span>
 					</p>
 					
 				</div>
-				<div class="col-lg-2 item col-sm-6">
-					<a href="#">
+				<div class="col-lg-2 col-md-4 item col-sm-6">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/iPhone-12-Pro-Max-128GB-160x160.png">
 					</a>
-					<p><a href="">iPhone 12 Pro Max 128GB (Hàng công ty VN/A)</a></p>
+					<p><a href="chitietsanpham.html">iPhone 12 Pro Max 128GB (Hàng công ty VN/A)</a></p>
 					<p>
 						<span class="after-price">2.690.000<sup>đ</sup></span>
 					</p>
 					
 				</div>
-				<div class="col-lg-2 item col-sm-6">
-					<a href="#">
+				<div class="col-lg-2 col-md-4 item col-sm-6">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/iPhone-12-Pro-Max-128GB-160x160 (1).png">
 					</a>
-					<p><a href="">iPhone 12 Pro Max 256GB (Hàng công ty VN/A)</a></p>
+					<p><a href="chitietsanpham.html">iPhone 12 Pro Max 256GB (Hàng công ty VN/A)</a></p>
 					<p>
 						<span class="after-price">6.150.000<sup>đ</sup></span>
 					</p>
 					
 				</div>
-				<div class="col-lg-2 item col-sm-6">
-					<a href="#">
+				<div class="col-lg-2 col-md-4 item col-sm-6">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/iPhone-12-Pro-Max-128GB-160x160 (2).png">
 					</a>
-					<p><a href="">iPhone 12 Pro Max 512GB (Hàng công ty VN/A)</a></p>
+					<p><a href="chitietsanpham.html">iPhone 12 Pro Max 512GB (Hàng công ty VN/A)</a></p>
 					<p>
 						<span class="after-price">2.890.000<sup>đ</sup></span>
 					</p>
@@ -337,57 +273,59 @@
 				<div class="col-lg-1 space"></div>
 			</div>
 		</div>
+		<!-- end apple -->
+		<!-- samsung -->
 		<div class="row product samsung">
 			<div>
 				<h4>Samsung</h4>
 			</div>
 			<div class="row list-product">
 				<div class="col-lg-1 space"></div>
-				<div class="col-lg-2 item col-sm-6">
-					<a href="#">
+				<div class="col-lg-2 col-md-4 item col-sm-6">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/iPhone-12-mini-đỏ-180x180.png">
 					</a>
-					<p><a href="">iPhone 12 Mini 64GB (Hàng công ty VN/A)</a></p>
+					<p><a href="chitietsanpham.html">iPhone 12 Mini 64GB (Hàng công ty VN/A)</a></p>
 					<p>
 						<span class="after-price">4.890.000<sup>đ</sup></span>
 					</p>
 					
 				</div>
-				<div class="col-lg-2 item col-sm-6">
-					<a href="#">
+				<div class="col-lg-2 col-md-4 item col-sm-6">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/iPhone-12-mini-trang-160x160.png">
 					</a>
-					<p><a href="">iPhone 12 Mini 128GB (Hàng công ty VN/A)</a></p>
+					<p><a href="chitietsanpham.html">iPhone 12 Mini 128GB (Hàng công ty VN/A)</a></p>
 					<p>
 						<span class="after-price">6.890.000<sup>đ</sup></span>
 					</p>
 					
 				</div>
-				<div class="col-lg-2 item col-sm-6">
-					<a href="#">
+				<div class="col-lg-2 col-md-4 item col-sm-6">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/iPhone-12-64GB-blue-160x160.png">
 					</a>
-					<p><a href="">iPhone 12 64GB (Hàng công ty VN/A)</a></p>
+					<p><a href="chitietsanpham.html">iPhone 12 64GB (Hàng công ty VN/A)</a></p>
 					<p>
 						<span class="after-price">2.690.000<sup>đ</sup></span>
 					</p>
 					
 				</div>
-				<div class="col-lg-2 item col-sm-6">
-					<a href="#">
+				<div class="col-lg-2 col-md-4 item col-sm-6">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/iPhone-12-64GB-Green-160x160.png">
 					</a>
-					<p><a href="">iPhone 12 128GB (Hàng công ty VN/A)</a></p>
+					<p><a href="chitietsanpham.html">iPhone 12 128GB (Hàng công ty VN/A)</a></p>
 					<p>
 						<span class="after-price">6.150.000<sup>đ</sup></span>
 					</p>
 					
 				</div>
-				<div class="col-lg-2 item col-sm-6">
-					<a href="#">
+				<div class="col-lg-2 col-md-4 item col-sm-6">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/iPhone-12-mini-trang-160x160 (1).png">
 					</a>
-					<p><a href="">iPhone 12 256GB (Hàng công ty VN/A)</a></p>
+					<p><a href="chitietsanpham.html">iPhone 12 256GB (Hàng công ty VN/A)</a></p>
 					<p>
 						<span class="after-price">2.890.000<sup>đ</sup></span>
 					</p>
@@ -395,51 +333,51 @@
 				</div>
 				<div class="col-lg-1 space"></div>
 				<div class="col-lg-1 space"></div>
-				<div class="col-lg-2 item col-sm-6">
-					<a href="#">
+				<div class="col-lg-2 col-md-4 item col-sm-6">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/iPhone-12-Pro-Max-128GB-den-160x160.png">
 					</a>
-					<p><a href="">iPhone 12 Pro 128GB (Hàng công ty VN/A)</a></p>
+					<p><a href="chitietsanpham.html">iPhone 12 Pro 128GB (Hàng công ty VN/A)</a></p>
 					<p>
 						<span class="after-price">4.890.000<sup>đ</sup></span>
 					</p>
 					
 				</div>
-				<div class="col-lg-2 item col-sm-6">
-					<a href="#">
+				<div class="col-lg-2 col-md-4 item col-sm-6">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/iPhone-12-Pro-Max-128GB-Gold-160x160.png">
 					</a>
-					<p><a href="">iPhone 12 Pro 256GB (Hàng công ty VN/A)</a></p>
+					<p><a href="chitietsanpham.html">iPhone 12 Pro 256GB (Hàng công ty VN/A)</a></p>
 					<p>
 						<span class="after-price">6.890.000<sup>đ</sup></span>
 					</p>
 					
 				</div>
-				<div class="col-lg-2 item col-sm-6">
-					<a href="#">
+				<div class="col-lg-2 col-md-4 item col-sm-6">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/iPhone-12-Pro-Max-128GB-160x160.png">
 					</a>
-					<p><a href="">iPhone 12 Pro Max 128GB (Hàng công ty VN/A)</a></p>
+					<p><a href="chitietsanpham.html">iPhone 12 Pro Max 128GB (Hàng công ty VN/A)</a></p>
 					<p>
 						<span class="after-price">2.690.000<sup>đ</sup></span>
 					</p>
 					
 				</div>
-				<div class="col-lg-2 item col-sm-6">
-					<a href="#">
+				<div class="col-lg-2 col-md-4 item col-sm-6">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/iPhone-12-Pro-Max-128GB-160x160 (1).png">
 					</a>
-					<p><a href="">iPhone 12 Pro Max 256GB (Hàng công ty VN/A)</a></p>
+					<p><a href="chitietsanpham.html">iPhone 12 Pro Max 256GB (Hàng công ty VN/A)</a></p>
 					<p>
 						<span class="after-price">6.150.000<sup>đ</sup></span>
 					</p>
 					
 				</div>
-				<div class="col-lg-2 item col-sm-6">
-					<a href="#">
+				<div class="col-lg-2 col-md-4 item col-sm-6">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/iPhone-12-Pro-Max-128GB-160x160 (2).png">
 					</a>
-					<p><a href="">iPhone 12 Pro Max 512GB (Hàng công ty VN/A)</a></p>
+					<p><a href="chitietsanpham.html">iPhone 12 Pro Max 512GB (Hàng công ty VN/A)</a></p>
 					<p>
 						<span class="after-price">2.890.000<sup>đ</sup></span>
 					</p>
@@ -448,57 +386,59 @@
 				<div class="col-lg-1 space"></div>
 			</div>
 		</div>
+		<!-- end samsung -->
+		<!-- phukien -->
 		<div class="row product phukien">
 			<div>
 				<h4>Phụ kiện</h4>
 			</div>
 			<div class="row list-product">
 				<div class="col-lg-1 space"></div>
-				<div class="col-lg-2 item col-sm-6">
-					<a href="#">
+				<div class="col-lg-2 col-md-4 item col-sm-6">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/iPhone-12-mini-đỏ-180x180.png">
 					</a>
-					<p><a href="">iPhone 12 Mini 64GB (Hàng công ty VN/A)</a></p>
+					<p><a href="chitietsanpham.html">iPhone 12 Mini 64GB (Hàng công ty VN/A)</a></p>
 					<p>
 						<span class="after-price">4.890.000<sup>đ</sup></span>
 					</p>
 					
 				</div>
-				<div class="col-lg-2 item col-sm-6">
-					<a href="#">
+				<div class="col-lg-2 col-md-4 item col-sm-6">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/iPhone-12-mini-trang-160x160.png">
 					</a>
-					<p><a href="">iPhone 12 Mini 128GB (Hàng công ty VN/A)</a></p>
+					<p><a href="chitietsanpham.html">iPhone 12 Mini 128GB (Hàng công ty VN/A)</a></p>
 					<p>
 						<span class="after-price">6.890.000<sup>đ</sup></span>
 					</p>
 					
 				</div>
-				<div class="col-lg-2 item col-sm-6">
-					<a href="#">
+				<div class="col-lg-2 col-md-4 item col-sm-6">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/iPhone-12-64GB-blue-160x160.png">
 					</a>
-					<p><a href="">iPhone 12 64GB (Hàng công ty VN/A)</a></p>
+					<p><a href="chitietsanpham.html">iPhone 12 64GB (Hàng công ty VN/A)</a></p>
 					<p>
 						<span class="after-price">2.690.000<sup>đ</sup></span>
 					</p>
 					
 				</div>
-				<div class="col-lg-2 item col-sm-6">
-					<a href="#">
+				<div class="col-lg-2 col-md-4 item col-sm-6">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/iPhone-12-64GB-Green-160x160.png">
 					</a>
-					<p><a href="">iPhone 12 128GB (Hàng công ty VN/A)</a></p>
+					<p><a href="chitietsanpham.html">iPhone 12 128GB (Hàng công ty VN/A)</a></p>
 					<p>
 						<span class="after-price">6.150.000<sup>đ</sup></span>
 					</p>
 					
 				</div>
-				<div class="col-lg-2 item col-sm-6">
-					<a href="#">
+				<div class="col-lg-2 col-md-4 item col-sm-6">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/iPhone-12-mini-trang-160x160 (1).png">
 					</a>
-					<p><a href="">iPhone 12 256GB (Hàng công ty VN/A)</a></p>
+					<p><a href="chitietsanpham.html">iPhone 12 256GB (Hàng công ty VN/A)</a></p>
 					<p>
 						<span class="after-price">2.890.000<sup>đ</sup></span>
 					</p>
@@ -506,51 +446,51 @@
 				</div>
 				<div class="col-lg-1 space"></div>
 				<div class="col-lg-1 space"></div>
-				<div class="col-lg-2 item col-sm-6">
-					<a href="#">
+				<div class="col-lg-2 col-md-4 item col-sm-6">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/iPhone-12-Pro-Max-128GB-den-160x160.png">
 					</a>
-					<p><a href="">iPhone 12 Pro 128GB (Hàng công ty VN/A)</a></p>
+					<p><a href="chitietsanpham.html">iPhone 12 Pro 128GB (Hàng công ty VN/A)</a></p>
 					<p>
 						<span class="after-price">4.890.000<sup>đ</sup></span>
 					</p>
 					
 				</div>
-				<div class="col-lg-2 item col-sm-6">
-					<a href="#">
+				<div class="col-lg-2 col-md-4 item col-sm-6">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/iPhone-12-Pro-Max-128GB-Gold-160x160.png">
 					</a>
-					<p><a href="">iPhone 12 Pro 256GB (Hàng công ty VN/A)</a></p>
+					<p><a href="chitietsanpham.html">iPhone 12 Pro 256GB (Hàng công ty VN/A)</a></p>
 					<p>
 						<span class="after-price">6.890.000<sup>đ</sup></span>
 					</p>
 					
 				</div>
-				<div class="col-lg-2 item col-sm-6">
-					<a href="#">
+				<div class="col-lg-2 col-md-4 item col-sm-6">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/iPhone-12-Pro-Max-128GB-160x160.png">
 					</a>
-					<p><a href="">iPhone 12 Pro Max 128GB (Hàng công ty VN/A)</a></p>
+					<p><a href="chitietsanpham.html">iPhone 12 Pro Max 128GB (Hàng công ty VN/A)</a></p>
 					<p>
 						<span class="after-price">2.690.000<sup>đ</sup></span>
 					</p>
 					
 				</div>
-				<div class="col-lg-2 item col-sm-6">
-					<a href="#">
+				<div class="col-lg-2 col-md-4 item col-sm-6">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/iPhone-12-Pro-Max-128GB-160x160 (1).png">
 					</a>
-					<p><a href="">iPhone 12 Pro Max 256GB (Hàng công ty VN/A)</a></p>
+					<p><a href="chitietsanpham.html">iPhone 12 Pro Max 256GB (Hàng công ty VN/A)</a></p>
 					<p>
 						<span class="after-price">6.150.000<sup>đ</sup></span>
 					</p>
 					
 				</div>
-				<div class="col-lg-2 item col-sm-6">
-					<a href="#">
+				<div class="col-lg-2 col-md-4 item col-sm-6">
+					<a href="chitietsanpham.html">
 						<img src="../images/product/iPhone-12-Pro-Max-128GB-160x160 (2).png">
 					</a>
-					<p><a href="">iPhone 12 Pro Max 512GB (Hàng công ty VN/A)</a></p>
+					<p><a href="chitietsanpham.html">iPhone 12 Pro Max 512GB (Hàng công ty VN/A)</a></p>
 					<p>
 						<span class="after-price">2.890.000<sup>đ</sup></span>
 					</p>
@@ -559,21 +499,22 @@
 				<div class="col-lg-1 space"></div>
 			</div>
 		</div>
+		<!-- end phukien -->
 	</div>
 	<!-- footer -->
 	<div class="row footer">
-		<div class="col-sm-6">
+		<div class="col-sm-6 col-6">
 			<h4>Thông tin liên lạc</h4>
 			<p>Gọi mua hàng: <a href="tel:19000000">1900.0000</a></p>
 			<p>Khiếu nại, góp ý: <a href="tel:19000000">1900.0000</a></p>
 			<p>Thời gian phục vụ: 8h - 22h</p>
 			<p>Email: <a href="mailto:tranvannhan1911@gmail.com">nhom7@gmail.vn</a></p>
 		</div>
-		<div class="col-sm-6">
+		<div class="col-sm-6 col-6">
 			<h4>Thông tin hỗ trợ</h4>
-			<p><a href="">Gói bảo hàng toàn diện 360</a></p>
-			<p><a href="">Chính sách đổi trả</a></p>
-			<p><a href="">Chính sách bảo hành</a></p>
+			<p><a href="chitietsanpham.html">Gói bảo hàng toàn diện 360</a></p>
+			<p><a href="chitietsanpham.html">Chính sách đổi trả</a></p>
+			<p><a href="chitietsanpham.html">Chính sách bảo hành</a></p>
 			<p></p>
 		</div>
 	</div>
