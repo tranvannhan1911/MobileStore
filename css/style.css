@@ -7,6 +7,7 @@
 a{
 	text-decoration: none;
 	color: black;
+	cursor: pointer;
 }
 
 a:hover{
@@ -105,8 +106,66 @@ a:hover{
 }
 /* end slide*/
 
+/* notification */
+.sec-notification{
+	position: fixed;
+    width: auto;
+}
+
+.sec-notification > div{
+	margin-bottom: 5px;
+	/*display: none;*/
+}
+/* end notification */
+
+/* */
+.section-quantity{
+	margin: 10px 0;
+}
+
+.section-quantity > a, .section-quantity > span{
+	display: inline-block;
+	margin: 0;
+	padding: 5px;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    text-align: center;
+    border: none;
+}
+
+.btn-custom{
+	margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #ed3237;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    border-radius: 5px; 
+}
+
+.btn-custom:hover{
+	background-color: transparent;
+	border: 1px solid #ed3237;
+	color: #ed3237;
+}
+
 @media only screen and (max-width: 991px) {
   	.space{
   		display: none;
+	}
+	.sec-notification{
+	    bottom: 0;
+	    right: 0;
+	    padding-bottom: 0;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.sec-notification{
+	    top: 0;
+	    left: 50%;
+	    transform: translate(-50%, 0);
+	    /*padding-bottom: 0;*/
 	}
 }

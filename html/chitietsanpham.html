@@ -59,7 +59,7 @@
 			<ol class="breadcrumb">
 				<li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
 				<li class="breadcrumb-item"><a href="index.html">Sản phẩm</a></li>
-				<li class="breadcrumb-item active" aria-current="page">iPhone 12 Mini 64GB (Hàng công ty VN/A)</li>
+				<li class="breadcrumb-item active" aria-current="page"></li>
 			</ol>
 		</nav>
 		<!-- end nav -->
@@ -69,35 +69,41 @@
 				<!-- general -->
 				<div class="row" style="margin-bottom: 20px">
 					<div class="col-lg-5 col-sm-5">
-						<img src="../images/product/iPhone-12-mini-đỏ-180x180.png" style="width: 100%; margin-bottom: 20px;">
+						<img class="img-product" src="" style="width: 100%; margin-bottom: 20px;">
 					</div>
 					<div class="col-lg-7 col-sm-7 general" >
 						<div class="section-title">
-							<h3 class="product-name">iPhone 12 Mini 64GB (Hàng công ty VN/A)</h3>
-							<p style="margin-bottom: 4px">Giá bán <span>16.990.000<sup>đ</sup></span></p>	
+							<h3 class="product-name"></h3>
+							<p style="margin-bottom: 4px">Giá bán <span class="price"><span></span><sup>đ</sup></span></p>	
 							<p style="margin-bottom: 4px">Bảo hành 1 đổi 1 trong 12 tháng ngày nếu có lỗi phần cứng</p>
 						</div>
+						<div class="section-quantity">
+							<p>Chọn số lượng: </p>
+							<a class="btn-decrease">-</a>
+							<span class="count_buy">1</span>
+							<a class="btn-increase">+</a>
+						</div>
 						<div>
-							<p>Chọn màu để xem giá của từng màu</p>
+							<p>Chọn màu: </p>
 							<div>
-								<div class="section-color">
+								<div class="section-color" data-color="Xanh dương">
 									<button class="btn btn-color" style="background-color: #1e73be"></button>
 								</div>
-								<div class="section-color">
+								<div class="section-color" data-color="Xanh lá">
 									<button class="btn btn-color" style="background-color: #3fdb66"></button>
 								</div>
-								<div class="section-color">
+								<div class="section-color" data-color="Đen">
 									<button class="btn btn-color" style="background-color: #3f3f3f"></button>
 								</div>
-								<div class="section-color">
+								<div class="section-color" data-color="Trắng">
 									<button class="btn btn-color" style="background-color: #f2f2f2"></button>
 								</div>
-								<div class="section-color active">
+								<div class="section-color active" data-color="Đỏ">
 									<button class="btn btn-color" style="background-color: #e0004a"></button>
 								</div>
 							</div>
 						</div>
-						<div>
+						<div class="section-promotion">
 							<h4>Khuyến mãi</h4>
 							<ul style="list-style-type:circle">
 								<li>Tặng thẻ cào 200.000đ đặt mua online</li>
@@ -107,7 +113,8 @@
 							</ul>
 						</div>
 						<div style="border: none">
-							<a href="dathang.html" class="btn btn-mua"><i class="fas fa-shopping-cart"></i> Mua ngay</a>
+							<a class="btn btn-mua btn-custom"><i class="fas fa-shopping-cart"></i> Mua ngay</a>
+							<a class="btn btn-add-cart btn-custom"><i class="fas fa-cart-plus"></i> Thêm vào giỏ</a>
 						</div>
 					</div>
 				</div>
@@ -252,7 +259,7 @@
 						<!-- end highlights -->
 						<!-- review  -->
 						<div class="tab-pane fade" id="product-review" role="tabpanel" aria-labelledby="contact-tab">
-							<h4>50 Đánh giá iPhone 12 Mini 64GB (Hàng công ty VN/A)</h4>
+							<h4>50 Đánh giá <span class="phone-name">iPhone 12 Mini 64GB (Hàng công ty VN/A)</span></h4>
 							<!-- overview -->
 							<div class="row overview">
 								<div class="col-xl-2 col-sm-2" style="border-right: 1px solid #eee">
@@ -266,7 +273,7 @@
 												<div class="below"></div>
 												<div class="slide-bar" style="width: 74%"></div>
 											</div>
-											37 đánh giá
+											<span class="count-review">37</span> đánh giá
 										</li>
 										<li>
 											4 <i class="fas fa-star"></i>
@@ -274,7 +281,7 @@
 												<div class="below"></div>
 												<div class="slide-bar" style="width: 12%"></div>
 											</div>
-											6 đánh giá
+											<span class="count-review">6</span> đánh giá
 										</li>
 										<li>
 											3 <i class="fas fa-star"></i> 
@@ -282,7 +289,7 @@
 												<div class="below"></div>
 												<div class="slide-bar" style="width: 6%"></div>
 											</div>
-											3 đánh giá
+											<span class="count-review">3</span> đánh giá
 										</li>
 										<li>
 											2 <i class="fas fa-star"></i> 
@@ -290,7 +297,7 @@
 												<div class="below"></div>
 												<div class="slide-bar" style="width: 4%"></div>
 											</div>
-											2 đánh giá
+											<span class="count-review">2</span> đánh giá
 										</li>
 										<li>
 											1 <i class="fas fa-star"></i> 
@@ -298,20 +305,21 @@
 												<div class="below"></div>
 												<div class="slide-bar" style="width: 4%"></div>
 											</div>
-											2 đánh giá
+											<span class="count-review">2</span> đánh giá
 										</li>
 									</ul>
 								</div>
 								<div class="col-xl-5 col-sm-4">
 									<div class="evaluate" style="padding-top: 25px;">
 										<div class="section-review">
-											<a href="#star5" class="btn-star star5"><i class="fas fa-star"></i></a>
-											<a href="#star4" class="btn-star star4"><i class="fas fa-star"></i></a>
-											<a href="#star3" class="btn-star star3"><i class="fas fa-star"></i></a>
-											<a href="#star2" class="btn-star star2"><i class="fas fa-star"></i></a>
-											<a href="#star1" class="btn-star star1"><i class="fas fa-star"></i></a>
+											<!-- reversed -->
+											<a class="btn-star star5" data-star="5"><i class="fas fa-star"></i></a>
+											<a class="btn-star star4" data-star="4"><i class="fas fa-star"></i></a>
+											<a class="btn-star star3" data-star="3"><i class="fas fa-star"></i></a>
+											<a class="btn-star star2" data-star="2"><i class="fas fa-star"></i></a>
+											<a class="btn-star star1" data-star="1"><i class="fas fa-star"></i></a>
 										</div>
-										<button class="btn btn-primary">Gửi đánh giá</button>
+										<button class="btn btn-primary btn-vote" data-star="0">Gửi đánh giá</button>
 										
 										
 									</div>
@@ -319,8 +327,10 @@
 							</div>
 							<!-- end overview -->
 							<!-- comment -->
-							<div class="row comment">
-								<div>
+							<div class="row section-comment">
+								
+								
+								<div class="comment">
 									<h5>Trần văn nhân</h5>
 									
 									<div class="star-vote" data-star="2">
@@ -334,51 +344,37 @@
 									</div>
 									<p>Ngon, xịn, mịn</p>
 									<div class="">
-										<a href="" style="color: #ed3237;margin-right: 10px">2 thảo luận</a>
-										<a href="" style="color: #ed3237;margin-right: 10px"><i class="far fa-thumbs-up"></i> Hữu ích</a>
+										<a class="btn-thaoluan" style="color: #ed3237;margin-right: 10px" data-active="0">2 thảo luận</a>
+										<a class="btn-huuich" style="color: #ed3237;margin-right: 10px" data-active="0"><i class="far fa-thumbs-up active"></i> <i class="fas fa-thumbs-up"></i> Hữu ích</a>
 										<p>2 tuần trước</p>
 									</div>
 									<div class="reply">
 										<ul>
 											<li>
-												<h6>Thiện quỳnh</h5>
+												<h6>Thiện quỳnh</h6>
 												<p>Oke!</p>
 												<div>
-													<a href="" style="color: #ed3237;margin-right: 10px"><i class="far fa-thumbs-up"></i> Hữu ích</a>
+													<a class="btn-huuich" style="color: #ed3237;margin-right: 10px" data-active="0"><i class="far fa-thumbs-up active"></i> <i class="fas fa-thumbs-up"></i> Hữu ích</a>
 													<p>2 tuần trước</p>
 												</div>
 											</li>
 											<li>
-												<h6>Tiến đạt</h5>
+												<h6>Tiến đạt</h6>
 												<p>Quá oke!</p>
 												<div>
-													<a href="" style="color: #ed3237;margin-right: 10px"><i class="far fa-thumbs-up"></i> Hữu ích</a>
+													<a class="btn-huuich" style="color: #ed3237;margin-right: 10px" data-active="0"><i class="far fa-thumbs-up active"></i> <i class="fas fa-thumbs-up"></i> Hữu ích</a>
 													<p>2 tuần trước</p>
 												</div>
 											</li>
 										</ul>
-									</div>
-								</div>
-								<div>
-									<h5>Trần công phú</h5>
-									
-									<div class="star-vote" data-star="2">
-										<div class="section-review">
-											<i class="fas fa-star" style="color: #fd9727"></i>
-											<i class="fas fa-star" style="color: #fd9727"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
-											<i class="fas fa-star"></i>
+										<div class="add-comment">
+											<textarea class="col-xl-6 col-sm-6 col-12" name="content"></textarea>
+											<button class="btn btn-primary btn-reply">Gửi</button>
 										</div>
 									</div>
-									<p>E mới mua con 12 pro max mà khởi bị khởi động lại có hiện tượng nháy táo rồi một lúc mới vô đc . Cho e hỏi chế độ bảo hành nhue thế nào ạ đc đổi mới không</p>
-									<div class="">
-										<a href="" style="color: #ed3237;margin-right: 10px">Thảo luận</a>
-										<a href="" style="color: #ed3237;margin-right: 10px"><i class="far fa-thumbs-up"></i> Hữu ích</a>
-										<p>2 tuần trước</p>
-									</div>
 								</div>
-								<div>
+
+								<div class="comment">
 									<h5>Tân phú</h5>
 									
 									<div class="star-vote" data-star="2">
@@ -392,12 +388,22 @@
 									</div>
 									<p>Xài rất ok rất mượt nhưng để qua đêm bị tụt vài phần trâm pin nhân viên chia sẽ nhiệt tình</p>
 									<div class="">
-										<a href="" style="color: #ed3237;margin-right: 10px">Thảo luận</a>
-										<a href="" style="color: #ed3237;margin-right: 10px"><i class="far fa-thumbs-up"></i> Hữu ích</a>
+										<a class="btn-thaoluan" style="color: #ed3237;margin-right: 10px" data-active="0">Thảo luận</a>
+										<a class="btn-huuich" style="color: #ed3237;margin-right: 10px" data-active="0"><i class="far fa-thumbs-up active"></i> <i class="fas fa-thumbs-up"></i> Hữu ích</a>
 										<p>2 tuần trước</p>
 									</div>
+									<div class="reply">
+										<ul>
+											
+										</ul>
+										<div class="add-comment">
+											<textarea class="col-xl-6 col-sm-6 col-12" name="content"></textarea>
+											<button class="btn btn-primary btn-reply">Gửi</button>
+										</div>
+									</div>
+
 								</div>
-								<div>
+								<div class="comment">
 									<h5>Ánh</h5>
 									
 									<div class="star-vote" data-star="2">
@@ -411,17 +417,28 @@
 									</div>
 									<p>máy pin trâu nhân viên tư vấn nhiệt tình mình rất thích cách phục này cảm ơn !</p>
 									<div class="">
-										<a href="" style="color: #ed3237;margin-right: 10px">Thảo luận</a>
-										<a href="" style="color: #ed3237;margin-right: 10px"><i class="far fa-thumbs-up"></i> Hữu ích</a>
+										<a class="btn-thaoluan" style="color: #ed3237;margin-right: 10px" data-active="0">Thảo luận</a>
+										<a class="btn-huuich" style="color: #ed3237;margin-right: 10px" data-active="0"><i class="far fa-thumbs-up active"></i> <i class="fas fa-thumbs-up"></i> Hữu ích</a>
 										<p>2 tuần trước</p>
 									</div>
+									<div class="reply">
+										<ul>
+											
+										</ul>
+										<div class="add-comment">
+											<textarea class="col-xl-6 col-sm-6 col-12" name="content"></textarea>
+											<button class="btn btn-primary btn-reply">Gửi</button>
+										</div>
+									</div>
+
 								</div>
+								
 							</div>
 							<div class="add-comment">
 								<div>
-									<textarea name="content"></textarea>
+									<textarea class="col-xl-6 col-sm-6 col-12" name="content"></textarea>
 									<div>
-										<button class="btn btn-primary">Gửi</button>
+										<button class="btn btn-primary btn-comment">Gửi</button>
 									</div>
 								</div>
 							</div>
@@ -475,7 +492,11 @@
 			</div>
 			<!-- end relate product -->
 		</div>
-		
+		<!-- notification -->
+		<div class="sec-notification ">
+			
+		</div>
+		<!-- end notification -->
 	</div>
 	<!-- end content -->
 	<!-- footer -->
@@ -496,5 +517,23 @@
 		</div>
 	</div>
 	<!-- end footer -->
+
+
+	<script src="../js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="../js/data.js"></script>
+	<script src="../js/main.js"></script>
+	<script src="../js/chitietsanpham.js"></script>
+	</script>
+	<script type="text/javascript">
+		url = window.location.href;
+		function start(){
+			params = getParams(url);
+			product = get_product(params["id"]);
+			render_product(product);
+			console.log(localStorage["username"]);
+		}
+		start();
+		
+	</script>
 </body>
 </html>
