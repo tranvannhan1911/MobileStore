@@ -12,7 +12,10 @@ li.breadcrumb-item.active{
 	margin-bottom: 10px;
 }
 
-
+.section-quantity > a, .section-quantity > span{
+	/*background-color: #eee;*/
+	border: 1px solid #eee;
+}
 
 .btn-color{
 	width: 30px;
@@ -35,19 +38,7 @@ li.breadcrumb-item.active{
 	font-family: 'Prompt', sans-serif;
 }
 
-.btn-mua{
-	padding: 10px 20px;
-	background-color: #ed3237;
-	color: white;
-	font-size: 25px;
-	font-weight: 600;
-}
 
-.btn-mua:hover{
-	background-color: white;
-	border: 1px solid #ed3237;
-	color: #ed3237;
-}
 
 .nav-link{
 	font-size: 20px;
@@ -207,27 +198,7 @@ ul{
 	color: #fd9727;
 }
 
-.star1:target > i{
-	color: #fd9727;
-}
-
-.star2:hover ~ a > i, .star2:hover > i{
-	color: #fd9727;
-}
-
-.star3:hover ~ a > i, .star3:hover > i{
-	color: #fd9727;
-}
-
-.star4:hover ~ a > i, .star4:hover > i{
-	color: #fd9727;
-}
-
-.star5:hover ~ a > i, .star5:hover > i{
-	color: #fd9727;
-}
-
-.comment{
+.section-comment{
 	padding-top: 20px;
 }
 
@@ -235,15 +206,15 @@ ul{
 	display: inline-block;
 }
 
-.comment > div{
+.section-comment > div{
 	margin-bottom: 15px;
 }
 
-.comment h5{
+.section-comment h5{
 	margin-bottom: 0;
 }
 
-.comment p{
+.section-comment p{
 	display: inline;
 }
 
@@ -252,12 +223,23 @@ ul{
 
 }
 
+.btn-huuich > i{
+	display: none;
+}
+
+.btn-huuich > i.active{
+	display: inline;
+}
+
 .reply{
+	display: none;
 	padding-top: 10px;
+	padding-left: 30px;
 }
 
 .reply > ul{
 	margin: 0;
+	padding: 0;
 }
 
 .reply > ul > li{
@@ -270,11 +252,32 @@ ul{
 	margin-bottom: 0;
 }
 
+.reply textarea{
+	height: 40px!important;
+}
+
+.reply .add-comment{
+	margin-top: 10px;
+}
+
+.reply .add-comment button{
+	height: 40px;
+    margin-top: -33px;
+}
+
+#product-review > .add-comment{
+	padding-top: 20px;
+    border-top: 1px solid #eee;	
+}
+
 .add-comment textarea{
-	width: 500px; 
 	height: 100px;
 	resize: none;
 	padding: 5px;
 	outline: none;
 }
 /* end review */
+
+/*notification*/
+
+/*end notification*/
