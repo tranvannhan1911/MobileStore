@@ -3,7 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- sửa title -->
-	<title>iPhone 12 Mini 64GB (Hàng công ty VN/A)</title>
+	<title>Đăng ký sản phẩm</title>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css">
 	<script type="text/javascript" scr="../js/jquery-3.6.0.min.js"></script>
 	<script type="text/javascript" src="../js/popper.min.js"></script>
@@ -65,33 +65,37 @@
 		      <!--dang ky-->
 			  <div class="center-align ">
 				<div class-="form-control center-align">
-					<form action="" class="form sign-up">
+					<form action="" class="form sign-up" onsubmit="return false">
 						<div class="input-group">
 							<i class='bx bxs-user-rectangle'></i>
-							<input type="text" placeholder="user name">
+							<input type="text" name="phone" placeholder="số điện thoại" autofocus="autofocus">
+							
 						</div>
-						<div class="input-group">
+						<!-- <div class="input-group">
 							<i class='bx bxs-envelope'></i>
-							<input type="text" placeholder="Email">
+							<input type="email" placeholder="email">
+						</div> -->
+						<div class="input-group">
+							<i class='bx bx-lock-open-alt'></i>
+							<input type="password" name="pass" placeholder="mật khẩu">
+							
 						</div>
 						<div class="input-group">
 							<i class='bx bx-lock-open-alt'></i>
-							<input type="text" placeholder="Password">
+							<input type="password" name="repass" placeholder="nhập lại mật khẩu">
+							
 						</div>
-						<div class="input-group">
-							<i class='bx bx-lock-open-alt'></i>
-							<input type="text" placeholder="Confirm Password">
-						</div>
-						<button class="btn btn-control">
-							Sign up
+						<p class="msg"></p>
+						<button class="btn btn-control btn-custom btn-register">
+							Đăng ký
 						</button>
 						<p>
 							<span>
-								Already have an account?
+								Đã có tài khoản ?
 							</span>
 							<a class="color-a"href="./dangnhap.html">
 								<b onclick="toggle()">
-									Sign up here
+									Đăng nhập ngay
 								</b></a>
 							<b onclick="toggle()">
 						</p>
@@ -121,7 +125,47 @@
 		</div>
 	</div>
 	<!-- end footer -->
+	<script src="../js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="../js/data.js"></script>
+	<script src="../js/main.js"></script>
+	<!-- <script src="../js/dangnhap.js"></script> -->
+	<script type="text/javascript">
+		$('.btn-register').click(function(){
+			var phone = removeAscent($('[name=phone]').val());
+			var pass = $('[name=pass]').val();
+			var repass = $('[name=repass]').val();
+			console.log(phone, pass, repass);
+			// alert("h");
+			if(!check_regex_2(phone, /^0[1-9]\d{8}$/, "Số điện thoại không hợp lệ")){
+				$('[name=phone]').focus();
+				return;
+			}
+
+			if(!check_regex_2(pass, /^[a-zA-Z0-9]{8,}$/, "Mật khẩu chỉ bao gồm chữ hoa, chữ thường, chữ số và ít nhất 8 ký tự")){
+				$('[name=pass]').focus();
+				return;
+			}
+
+			if(pass != repass){
+				$('[name=repass]').focus();
+				$('.msg').text("Nhập lại mật khẩu không trùng!");
+				return;	
+			}
+			$('.msg').text("");
+			window.location.href = "dangnhap.html";
+		});
+
+		function check_regex_2(str, pattern, msg){
+			str = removeAscent(str);
+			if(pattern.test(str) == false){
+				$('.msg').text(msg);
+				return false;
+			}
+			return true;
+		}
+		
+	</script>
 </body>
-<script src="../js/dangnhap.js"></script>
+
 
 </html>
