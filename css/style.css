@@ -70,6 +70,10 @@ a:hover{
     font-family: 'Jura', sans-serif;
 }
 
+.list-product{
+    margin: auto;
+}
+
 .list-product img{
 	width: 80%;
 }

@@ -71,27 +71,33 @@
   }
   
   .input-group input:focus {
-    border: 0.125rem solid rgb(108, 252, 115);
+    border: 2px solid #ed3237;
   }
   
   .form button {
     cursor: pointer;
+    margin: 0;
     width: 100%;
-    padding: 0.8rem 0;
-    border: none;
-    background-color: #046d27;
     outline: none;
     color: white;
     border-radius:0.5rem;
   }
   
-  form button:hover {
+  /*form button:hover {
     opacity: 0.9;
+  }*/
+  .form{
+    width: 350px;
   }
+
   .form p {
     margin: 1rem 0;
     font-size: 1rem;
     cursor: pointer;
+  }
+
+  .msg{
+    color: #ed3237;
   }
   
   .socical-list {

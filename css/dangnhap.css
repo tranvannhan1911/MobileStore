@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+
 .color-a {
   color: black;
 }
@@ -15,10 +16,9 @@ body {
 }
 
 .container {
-  position: relative;
-  min-height: 100vh;
+  position: initial;
   overflow: hidden;
-  padding: 100px;
+  padding: 200px 20px;
 }
 
 
@@ -72,15 +72,18 @@ body {
 }
 
 .input-group input:focus {
-  border: 0.125rem solid rgb(108, 252, 115);
+  border: 2px solid #ed3237;
+}
+.form{
+  width: 350px;
 }
 
 .form button {
   cursor: pointer;
   width: 100%;
   padding: 0.8rem 0;
-  border: none;
-  background-color: #046d27;
+  margin: 0;
+  /*background-color: #046d27;*/
   outline: none;
   color: white;
   border-radius:0.5rem;

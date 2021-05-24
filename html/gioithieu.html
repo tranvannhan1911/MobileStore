@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- sửa title -->
+	<title>Trang giới thiệu</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css">
+	<script type="text/javascript" scr="../js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="../js/popper.min.js"></script>
+	<script type="text/javascript" src="../js/bootstrap/bootstrap.min.js"></script>
+	<script src="https://kit.fontawesome.com/e3ed4ab9af.js" crossorigin="anonymous"></script>
+    
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Merriweather+Sans:wght@300&family=Pacifico&display=swap" rel="stylesheet">
+
+	
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<!-- liên kết đến file js và css ở đây -->
+	<style type="text/css">
+		.main{
+			padding: 0;
+		}
+
+		.main > div{
+			width: 100vw;
+			height: 100vh;
+			margin: 0;
+			position: relative;
+		}
+
+		.content{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.intro-member{
+			display: flex;
+			
+		}
+
+		.intro-member > div{
+			margin: 0 10px;
+		}
+
+		.sec-img{
+			width: 250px;
+			height: 250px;
+			border: 10px solid black;
+			border-radius: 50px;
+			transform: rotate(45deg);
+			overflow: hidden;
+			box-shadow: 0px 0px 10px black;
+		}
+
+		.img{
+			width: 315px;
+		    height: 403px;
+		    margin-top: -50px;
+		    background-size: cover;
+		    background-position: center;
+		    transform: rotate(-45deg);
+		}
+
+		.sec-info{
+			padding: 50px 5px;
+		}
+
+		.sec-info > h3{
+			font-family: 'Pacifico', cursive;
+		}
+
+		.hr{
+			height: 6px!important;
+		    width: 100px;
+		    margin: 0 auto 10px auto;
+		    background-color: #fad94b;
+		    
+		}
+
+		.sec-info > p{
+			margin-bottom: 0px;
+			font-family: 'Arvo', serif;	
+		}
+
+		h1{
+			font-family: 'Merriweather Sans', sans-serif;
+			display: inline-block;
+			border-bottom: 3px solid #ed3237;
+			padding-bottom: 5px;
+			margin-bottom: 70px;
+		}
+		
+	</style>
+	<!-- end -->
+</head>
+<body>
+	
+	<div class="main">
+		<div class="sec-intro-member">
+			<div class="content">
+				<h1>Giới thiệu thành viên</h1>
+				<div class="intro-member">
+
+					<div>
+						<div class="sec-img">
+							<div class="img" style="background-image: url('../images/nguyentiendat.jpg')"></div>
+						</div>
+						<div class="sec-info">
+							<h3>Nguyễn Tiến Đạt</h3>
+							<div class="hr"></div>
+							<p>Mssv: 19526811</p>
+							<p>Email: tranvannhan1911@gmail.com</p>
+						</div>
+					</div>
+					<div style="position: relative;z-index: 1;" >
+						<div class="sec-img">
+							<div class="img" style="background-image: url('../images/tranvannhan.jpg')"></div>
+						</div>
+						<div class="sec-info">
+							<h3>Trần Văn Nhân</h3>
+							<div class="hr" style="background-color: #ed3237"></div>
+							<p>Mssv: 19526811</p>
+							<p>Email: tranvannhan1911@gmail.com</p>
+						</div>
+					</div>
+					<div>
+						<div class="sec-img">
+							<div class="img" style="background-image: url('../images/thienquynh.jpg')"></div>
+						</div>
+						<div class="sec-info">
+							<h3>Thiện Quỳnh</h3>
+							<div class="hr"></div>
+							<p>Mssv: 19526811</p>
+							<p>Email: tranvannhan1911@gmail.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="sec-intro-website">
+			<div class="content">
+				<h1>Giới thiệu website</h1>
+				<div class="intro-website">
+
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
