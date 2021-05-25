@@ -25,7 +25,7 @@ function render_khuyenmai(){
 
 		html += '<div class="slide col-lg-2 col-sm-4 col-6">'
 				+'	<a href="chitietsanpham.html?id='+ list_id[i] +'">'
-				+'		<img src="'+ data[list_id[i]-1]["image"] +'">'
+				+'		<img src="'+ IMAGE_PATH+data[list_id[i]-1]["image"] +'">'
 				+'	</a>'
 				+'	<p><a href="chitietsanpham.html?id='+ list_id[i] +'">'+ data[list_id[i]-1]["name"] +'</a></p>'
 				+'	<p>'

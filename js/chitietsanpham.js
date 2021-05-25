@@ -22,7 +22,7 @@ function render_product(product){
 	$('.breadcrumb > .active').text(product["name"]);
 	$('.phone-name').text(product["name"]);
 	img_product = $('img.img-product');
-	img_product.attr("src", product["image"]);
+	img_product.attr("src", IMAGE_PATH+product["image"]);
 
 	title_product = $('.section-title > .product-name');
 	title_product.text(product["name"]);

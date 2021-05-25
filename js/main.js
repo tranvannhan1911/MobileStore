@@ -1,3 +1,5 @@
+var IMAGE_PATH = "../images/product/";
+
 function reverse(s){
     return s.split("").reverse().join("");
 }
@@ -97,9 +99,10 @@ function check_pass(){
 }
 
 function product_html(data){
+
 	return '<div class="col-lg-2 col-md-4 item col-sm-6 item-product" data-id="'+data["id"]+'" data-price="'+ data["price"] +'">\n'
 			+'	<a href="chitietsanpham.html?id='+data["id"]+'">\n'
-			+'		<img src="'+data["image"]+'">\n'
+			+'		<img src="'+IMAGE_PATH+data["image"]+'">\n'
 			+'	</a>\n'
 			+'	<p><a href="chitietsanpham.html?id='+data["id"]+'">'+data["name"]+'</a></p>\n'
 			+'	<p>\n'

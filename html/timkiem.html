@@ -15,8 +15,30 @@
 	<link rel="stylesheet" type="text/css" href="../css/header.css">
 	<link rel="stylesheet" type="text/css" href="../css/footer.css">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/sanpham.css">
 	<!-- liên kết đến file js và css ở đây -->
+	<style type="text/css">
+		.product > div:nth-child(1){
+			text-align: left;
+			border-bottom: 2px solid #eee!important;
+			margin-bottom: 20px;
+		}
 
+		.product h4{
+		    margin: 15px 0 15px 0 !important;
+			border-bottom: none !important;
+    		/*display: block !important;*/
+    	}
+
+    	.Loc{
+    		display: inline-block;
+    		float: right;
+    	}
+
+    	.main{
+    		padding-top: 50px;
+    	}
+	</style>
 	<!-- end -->
 </head>
 <body>
@@ -57,10 +79,40 @@
 	<!-- end header -->
 	<!-- content -->
 	<div class="row main">
-		<!-- code vào đây -->
-		<div class="row product">
+
+		
+		<div class="row product active">
 			<div>
-				<h4>Kết quả tìm kiếm cho "<span class="keyword">Iphone</span>"</h4>
+				<h4>Kết quả tìm kiếm cho "<span class="keyword"></span>"</h4>
+				<div class="Loc">
+
+					<div class="filter">
+						<div class="btn-group">
+						  	<button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+						  		Sắp xếp theo
+						  	</button>
+						  	<ul class="dropdown-menu">
+						  		<li><a class="dropdown-item sort" data-sort="desc">Giá giảm dần</a></li>
+						  		<li><a class="dropdown-item sort" data-sort="insc">Giá tăng dần</a></li>
+						  	</ul>
+						</div>
+					</div>					
+
+					<div class="filter">
+						<div class="btn-group">
+						  	<button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+						  		Lọc theo giá
+						  	</button>
+						  	<ul class="dropdown-menu">
+						  		<li><a class="dropdown-item filter-price"data-start="0" data-end="1000000000">Tất cả</a></li>
+						  		<li><a class="dropdown-item filter-price"data-start="0" data-end="5000000">Dưới 5 triệu</a></li>
+						  		<li><a class="dropdown-item filter-price"data-start="5000000" data-end="10000000">Từ 5-10 triệu</a></li>
+						  		<li><a class="dropdown-item filter-price"data-start="10000000" data-end="20000000">Từ 10-20 triệu</a></li>
+						  		<li><a class="dropdown-item filter-price"data-start="20000000" data-end="1000000000">Trên 20 triệu</a></li>
+						  	</ul>
+						</div>
+					</div>					
+				</div>
 			</div>
 			<p class="hetSp" style="font-size: -webkit-xxx-large;display: none">Không có sản phẩm phù hợp</p>
 			<div class="row list-product">
@@ -90,6 +142,7 @@
 	<script src="../js/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="../js/data.js"></script>
 	<script src="../js/main.js"></script>
+	<script src="../js/sanpham.js"></script>
 	<script src="../js/timkiem.js"></script>
 	</script>
 	<script type="text/javascript">
