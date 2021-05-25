@@ -14,13 +14,18 @@
 	<link rel="stylesheet" type="text/css" href="../css/header.css">
 	<link rel="stylesheet" type="text/css" href="../css/footer.css">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link rel="stylesheet" href="../css/sanpham.css">
+	<style type="text/css">
+		.product{
+			border: 2px solid #ed3237;
+		}
+	</style>
 </head>
 <body >
 	<!-- header -->
 	<div class="row header">
 		<div class="col-xl-4 col-sm-12 logo">
-			<a href="index.html"><h3>Cửa Hàng Di động</h3></a>
+			<a href=""><h3>Cửa Hàng Di động</h3></a>
 		</div>
 		<div class="col-xl-2 col-sm-12 search">
 			<form action="">
@@ -31,22 +36,19 @@
 		</div>
 		<div class="col-xl-6 col-sm-12">
 			<ul class="menu">
-				<li><a href="#" class="sanpham" data-type="apple"><i class="fab fa-apple" style="font-size: 25px;"></i>Apple</a></li>
-				<li><a href="#" class="sanpham" data-type="samsung"><i class="fas fa-mobile-alt" style="font-size: 20px;"></i>Samsung</a></li>
-				<li><a href="#" class="sanpham" data-type="phukien"><i class="fas fa-headphones-alt" style="font-size: 21px;"></i>Phụ kiện</a></li>
+				<li><a href="apple.html"><i class="fab fa-apple" style="font-size: 25px;"></i>Apple</a></li>
+				<li><a href="samsung.html"><i class="fas fa-mobile-alt" style="font-size: 20px;"></i>Samsung</a></li>
+				<li><a href="phukien.html"><i class="fas fa-headphones-alt" style="font-size: 21px;"></i>Phụ kiện</a></li>
 				<li><a href="tintuc.html"><i class="far fa-newspaper" style="font-size: 21px;"></i>Tin tức</a></li>
-				<li><a href="gioithieu.html"><i class="far fa-newspaper" style="font-size: 21px;"></i>Giới thiệu</a></li>
 			</ul>
 			<div class="btn-group user">
 				<button type="button" class="btn dropdown-toggle acction-user" data-bs-toggle="dropdown" aria-expanded="false">
 					Xin chào
 				</button>
 				<ul class="dropdown-menu">
-					<li class="item-dangky"><a class="dropdown-item" href="dangky.html"><i class="fas fa-user-plus"></i> Đăng ký</a></li>
-					<li class="item-dangnhap"><a class="dropdown-item" href="dangnhap.html"><i class="fas fa-sign-in-alt" style="margin-right: 3px;"></i> Đăng nhập</a></li>
-					<li class="item-giohang"><a class="dropdown-item" href="giohang.html"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a></li>
-					<li class="item-dangxuat"><hr class="dropdown-divider"></li>
-    				<li class="item-dangxuat"><a class="dropdown-item btn-logout" href="#"  style="color: #ed3237"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a></li>
+					<li><a class="dropdown-item" href="dangky.html"><i class="fas fa-user-plus"></i> Đăng ký</a></li>
+					<li><a class="dropdown-item" href="dangnhap.html"><i class="fas fa-sign-in-alt" style="margin-right: 3px;"></i> Đăng nhập</a></li>
+					<li><a class="dropdown-item" href="giohang.html"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a></li>
 				</ul>
 			</div>
 		</div>
@@ -65,19 +67,13 @@
 					</div>
 					<div class="carousel-inner">
 						<div class="carousel-item active">
-							<a href="chitietsanpham.html?id=10">
-								<img src="../images/BÌA-IP-12-1.png" class="d-block w-100" alt="...">
-							</a>
+							<img src="../images/BÌA-IP-12-1.png" class="d-block w-100" alt="...">
 						</div>
 						<div class="carousel-item">
-							<a href="chitietsanpham.html?id=15">
-								<img src="../images/GALAXY-S21-6.png" class="d-block w-100" alt="...">
-							</a>
+							<img src="../images/GALAXY-S21-6.png" class="d-block w-100" alt="...">
 						</div>
 						<div class="carousel-item">
-							<a href="">
-								<img src="../images/BÌA-STAR-5 (1).png" class="d-block w-100" alt="...">
-							</a>
+							<img src="../images/BÌA-STAR-5 (1).png" class="d-block w-100" alt="...">
 						</div>
 					</div>
 					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -96,32 +92,58 @@
 			</div>
 			<div class="col-lg-4">
 				<div class="row">
-					<a href="">
-						<img src="../images/BÌA-STAR-5.png" style="width: 100%">
-					</a>
+					<img src="../images/BÌA-STAR-5.png" style="width: 100%">
 				</div>
 				<div class="row">
-					<a href="chitietsanpham.html?id=13">
-						<img src="../images/BANNER-SS-NHO.png" style="width: 100%">
-					</a>
+					<img src="../images/BANNER-SS-NHO.png" style="width: 100%">
 				</div>
 			</div>
 		</div>
 		<!-- end banner -->
-		<!-- khuyến mãi -->
-		<div class="row khuyenmai">
-			<div class="">
-				<h4>Khuyến mãi</h4>	
-			</div>
-			
-			<div class="list-khuyenmai">
-			</div>
+
+		<!-- phần lọc -->
+		<div class="Loc">
+
+			<div class="filter">
+				<!-- <label for="cars">Sắp xếp theo thứ tự:</label>
+				  <select id="cars" name="cars">
+					<option value="Giảm">Giá giảm dần </option>
+					<option value="Tăng">Giá tăng dần</option>
+				  </select> -->
+				<div class="btn-group">
+				  	<button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+				  		Sắp xếp theo
+				  	</button>
+				  	<ul class="dropdown-menu">
+				  		<li><a class="dropdown-item sort" data-sort="desc">Giá giảm dần</a></li>
+				  		<li><a class="dropdown-item sort" data-sort="insc">Giá tăng dần</a></li>
+				  	</ul>
+				</div>
+			</div>					
+
+			<div class="filter">
+				<div class="btn-group">
+				  	<button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+				  		Lọc theo giá
+				  	</button>
+				  	<ul class="dropdown-menu">
+				  		<li><a class="dropdown-item filter-price"data-start="0" data-end="1000000000">Tất cả</a></li>
+				  		<li><a class="dropdown-item filter-price"data-start="0" data-end="5000000">Dưới 5 triệu</a></li>
+				  		<li><a class="dropdown-item filter-price"data-start="5000000" data-end="10000000">Từ 5-10 triệu</a></li>
+				  		<li><a class="dropdown-item filter-price"data-start="10000000" data-end="20000000">Từ 10-20 triệu</a></li>
+				  		<li><a class="dropdown-item filter-price"data-start="20000000" data-end="1000000000">Trên 20 triệu</a></li>
+				  	</ul>
+				</div>
+			</div>					
 		</div>
+		<!-- hết phần lọc -->
+		
 		<!-- apple -->
 		<div class="row product apple">
 			<div>
 				<h4>Apple</h4>
 			</div>
+			<p class="hetSp" style="font-size: -webkit-xxx-large;display: none">Không có sản phẩm phù hợp</p>
 			<div class="row list-product">
 				
 			</div>
@@ -132,6 +154,7 @@
 			<div>
 				<h4>Samsung</h4>
 			</div>
+			<p class="hetSp" style="font-size: -webkit-xxx-large;display: none">Không có sản phẩm phù hợp</p>
 			<div class="row list-product">
 				
 			</div>
@@ -142,11 +165,13 @@
 			<div>
 				<h4>Phụ kiện</h4>
 			</div>
+			<p class="hetSp" style="font-size: -webkit-xxx-large;display: none">Không có sản phẩm phù hợp</p>
 			<div class="row list-product">
 				
 			</div>
 		</div>
 		<!-- end phukien -->
+		
 	</div>
 	<!-- footer -->
 	<div class="row footer">
@@ -159,27 +184,34 @@
 		</div>
 		<div class="col-sm-6 col-6">
 			<h4>Thông tin hỗ trợ</h4>
-			<p><a href="#">Gói bảo hàng toàn diện 360</a></p>
-			<p><a href="#">Chính sách đổi trả</a></p>
-			<p><a href="#">Chính sách bảo hành</a></p>
+			<p><a href="chitietsanpham.html">Gói bảo hàng toàn diện 360</a></p>
+			<p><a href="chitietsanpham.html">Chính sách đổi trả</a></p>
+			<p><a href="chitietsanpham.html">Chính sách bảo hành</a></p>
 			<p></p>
 		</div>
 	</div>
 	<!-- end footer -->
-
 	<script src="../js/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="../js/data.js"></script>
 	<script src="../js/main.js"></script>
-	<script type="text/javascript" src="../js/slide-khuyenmai.js"></script>
 	<script type="text/javascript" src="../js/render-product.js"></script>
+	<script type="text/javascript" src="../js/sanpham.js"></script>
 	<script type="text/javascript">
 		function start(){
-			render_khuyenmai();
-			slide_khuyenmai();
-			render_product(data, "apple");
-			render_product(data, "samsung");
-			render_product(data, "phukien");
-			localStorage["username"] = "tranvannhan1911";
+			console.log(localStorage["type"]);
+			if(localStorage["type"] == null)
+				localStorage["type"] = "apple";
+
+			if(localStorage["type"] == "apple"){
+				$('.apple').addClass('active');
+			}else if(localStorage["type"] == "samsung"){
+				$('.samsung').addClass('active');
+			}else if(localStorage["type"] == "phukien"){
+				$('.phukien').addClass('active');
+			}
+
+			render_product(data, localStorage["type"]);
+			$(".space").hide();
 		}
 		start();
 		

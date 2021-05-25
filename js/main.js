@@ -126,3 +126,31 @@ function cal_total(){
 	$(".total").text(currency_format(total));
 
 }
+
+$('.btn-logout').click(function(){
+	localStorage["login"] = 0;
+	localStorage["phone"] = "";
+	localStorage["password"] = "";
+	console.log(localStorage["login"]);
+	window.location.href = "";
+});
+
+function renderConstraint(){
+	// check login
+	console.log(localStorage["login"]);
+	if(localStorage["login"] == 1){// đã đăng nhập
+		$('.item-dangky').hide();
+		$('.item-dangnhap').hide();
+	}else{
+		console.log(localStorage["login"]);
+		$('.item-dangxuat').hide();
+		// $('.item-dangnhap').hide();
+	}
+}
+
+renderConstraint();
+
+$('.sanpham').click(function(){
+	localStorage["type"] = $(this).attr('data-type');
+	window.location.href = "sanpham.html";
+});

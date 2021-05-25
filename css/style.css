@@ -163,6 +163,7 @@ a:hover{
 	    right: 0;
 	    padding-bottom: 0;
 	}
+	
 }
 
 @media only screen and (min-width: 992px) {
@@ -171,5 +172,11 @@ a:hover{
 	    left: 50%;
 	    transform: translate(-50%, 0);
 	    /*padding-bottom: 0;*/
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.sec-relate{
+		display: none;
 	}
 }

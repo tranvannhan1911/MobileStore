@@ -13,6 +13,8 @@
     font-family: "Helvetica Neue";
   }
   
+ 
+
   .container {
     position: relative;
     min-height: 100vh;
@@ -25,6 +27,8 @@
   
   
   .center-align {
+    padding-top: 50px!important;
+    padding-bottom: 50px!important;
     display: flex;
     align-items: center;
     justify-content: center;
