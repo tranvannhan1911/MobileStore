@@ -96,6 +96,19 @@ function check_pass(){
 	return check_regex($("[name=pass]"), /^[^0-9]{4,}$/, "Mật khẩu không hợp lệ.");
 }
 
+function product_html(data){
+	return '<div class="col-lg-2 col-md-4 item col-sm-6 item-product" data-id="'+data["id"]+'" data-price="'+ data["price"] +'">\n'
+			+'	<a href="chitietsanpham.html?id='+data["id"]+'">\n'
+			+'		<img src="'+data["image"]+'">\n'
+			+'	</a>\n'
+			+'	<p><a href="chitietsanpham.html?id='+data["id"]+'">'+data["name"]+'</a></p>\n'
+			+'	<p>\n'
+			+'		<span class="after-price">'+currency_format(data["price"])+'<sup>đ</sup></span>\n'
+			+'	</p>\n'
+				
+			+'</div>\n';
+}
+
 function decrease(){
 	sec_quantity = $(this).parent();
 	txtNumber = $(sec_quantity).find("span");
@@ -153,4 +166,9 @@ renderConstraint();
 $('.sanpham').click(function(){
 	localStorage["type"] = $(this).attr('data-type');
 	window.location.href = "sanpham.html";
+});
+
+$('.btn-search').click(function(){
+	localStorage["search"] = $('#txt-search').val();
+	window.location.href = "timkiem.html";
 });

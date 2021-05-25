@@ -212,11 +212,13 @@ $(".btn-star").click(function(){
 
 $(".btn-vote").click(function(){
 	star = Number($(this).attr("data-star"));
-	$(this).text("Đã gửi đánh giá");
-	$(this).attr("disabled", "disabled");
+	if(star != 0){
+		$(this).text("Đã gửi đánh giá");
+		$(this).attr("disabled", "disabled");
 
-	count_review = $(".count-review")[5-star];
-	$(count_review).text(String(Number($(count_review).text())+1));
+		count_review = $(".count-review")[5-star];
+		$(count_review).text(String(Number($(count_review).text())+1));
+	}
 });
 
 $(".btn-color").click(function(){
