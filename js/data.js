@@ -1,7 +1,7 @@
 data = [
 	{
 		id: 1,
-		image: "https://thegioiso360.vn/wp-content/uploads/2018/10/iPhone-12-mini-đỏ-160x160.png",
+		image: "iPhone-12-mini-đỏ-160x160.png",
 		name: "iPhone 12 Mini 64GB (Hàng công ty VN/A)",
 		price: 16990000,
 		promotion: [
@@ -10,7 +10,7 @@ data = [
 	},
 	{
 		id: 2,
-		image: "https://thegioiso360.vn/wp-content/uploads/2018/10/iPhone-12-mini-trang-160x160.png",
+		image: "iPhone-12-mini-trang-160x160.png",
 		name: "iPhone 12 Mini 128GB (Hàng công ty VN/A)",
 		price: 18990000,
 		promotion: [
@@ -19,7 +19,7 @@ data = [
 	},
 	{
 		id: 3,
-		image: "https://thegioiso360.vn/wp-content/uploads/2019/10/iPhone-12-64GB-blue-160x160.png",
+		image: "iPhone-12-64GB-blue-160x160.png",
 		name: "iPhone 12 64GB (Hàng công ty VN/A)",
 		price: 20290000,
 		promotion: [
@@ -28,7 +28,7 @@ data = [
 	},
 	{
 		id: 4,
-		image: "https://thegioiso360.vn/wp-content/uploads/2020/12/iPhone-12-64GB-Green-160x160.png",
+		image: "iPhone-12-64GB-Green-160x160.png",
 		name: "iPhone 12 128GB (Hàng công ty VN/A)",
 		price: 22190000,
 		promotion: [
@@ -37,7 +37,7 @@ data = [
 	},
 	{
 		id: 5,
-		image: "https://thegioiso360.vn/wp-content/uploads/2018/10/iPhone-12-mini-trang-160x160.png",
+		image: "iPhone-12-mini-trang-160x160.png",
 		name: "iPhone 12 256GB (Hàng công ty VN/A)",
 		price: 24690000,
 		promotion: [
@@ -46,7 +46,7 @@ data = [
 	},
 	{
 		id: 6,
-		image: "https://thegioiso360.vn/wp-content/uploads/2020/12/iPhone-12-Pro-Max-128GB-den-160x160.png",
+		image: "iPhone-12-Pro-Max-128GB-den-160x160.png",
 		name: "iPhone 12 Pro 128GB (Hàng công ty VN/A)",
 		price: 26990000,
 		promotion: [
@@ -55,7 +55,7 @@ data = [
 	},
 	{
 		id: 7,
-		image: "https://thegioiso360.vn/wp-content/uploads/2018/10/iPhone-12-Pro-Max-128GB-Gold-160x160.png",
+		image: "iPhone-12-Pro-Max-128GB-Gold-160x160.png",
 		name: "iPhone 12 Pro 256GB (Hàng công ty VN/A)",
 		price: 29990000,
 		promotion: [
@@ -64,7 +64,7 @@ data = [
 	},
 	{
 		id: 8,
-		image: "https://thegioiso360.vn/wp-content/uploads/2020/12/iPhone-12-Pro-Max-128GB-160x160.png",
+		image: "iPhone-12-Pro-Max-128GB-160x160.png",
 		name: "iPhone 12 Pro Max 128GB (Hàng công ty VN/A)",
 		price: 29690000,
 		promotion: [
@@ -73,7 +73,7 @@ data = [
 	},
 	{
 		id: 9,
-		image: "https://thegioiso360.vn/wp-content/uploads/2020/12/iPhone-12-Pro-Max-128GB-160x160.png",
+		image: "iPhone-12-Pro-Max-128GB-160x160.png",
 		name: "iPhone 12 Pro Max 256GB (Hàng công ty VN/A)",
 		price: 32290000,
 		promotion: [
@@ -82,7 +82,7 @@ data = [
 	},
 	{
 		id: 10,
-		image: "https://thegioiso360.vn/wp-content/uploads/2020/12/iPhone-12-Pro-Max-128GB-160x160.png",
+		image: "iPhone-12-Pro-Max-128GB-160x160.png",
 		name: "iPhone 12 Pro Max 512GB (Hàng công ty VN/A)",
 		price: 37990000,
 		promotion: [
@@ -91,7 +91,7 @@ data = [
 	},
 	{
 		id: 11,
-		image: "https://thegioiso360.vn/wp-content/uploads/2020/05/samsung-a72-den-160x160.png",
+		image: "samsung-a72-den-160x160.png",
 		name: "Samsung Galaxy A72",
 		price: 10690000,
 		promotion: [
@@ -105,7 +105,7 @@ data = [
 	},
 	{
 		id: 12,
-		image: "https://thegioiso360.vn/wp-content/uploads/2021/03/samsung-a52-tím-160x160.png",
+		image: "samsung-a52-tím-160x160.png",
 		name: "Samsung Galaxy A52",
 		price: 8690000,
 		promotion: [
@@ -119,7 +119,7 @@ data = [
 	},
 	{
 		id: 13,
-		image: "https://thegioiso360.vn/wp-content/uploads/2021/04/Samsung-Galaxy-A32-5G-160x160.png",
+		image: "Samsung-Galaxy-A32-5G-160x160.png",
 		name: "Samsung Galaxy A32",
 		price: 5990000,
 		promotion: [
@@ -133,7 +133,7 @@ data = [
 	},
 	{
 		id: 14,
-		image: "https://thegioiso360.vn/wp-content/uploads/2020/05/Samsung-Galaxy-A02s-White-160x160.png",
+		image: "Samsung-Galaxy-A02s-White-160x160.png",
 		name: "Samsung Galaxy A02s (4GB/64GB)",
 		price: 3190000,
 		promotion: [
@@ -146,7 +146,7 @@ data = [
 	},
 	{
 		id: 15,
-		image: "https://thegioiso360.vn/wp-content/uploads/2021/01/Samsung-Galaxy-S21-Ultra-5G-Đen-160x160.png",
+		image: "Samsung-Galaxy-S21-Ultra-5G-Đen-160x160.png",
 		name: "Samsung Galaxy S21 Ultra 5G (12GB/128GB)",
 		price: 21990000,
 		promotion: [
@@ -160,7 +160,7 @@ data = [
 	},
 	{
 		id: 16,
-		image: "https://thegioiso360.vn/wp-content/uploads/2019/11/Samsung-Galaxy-S21-Trắng-160x160.png",
+		image: "Samsung-Galaxy-S21-Trắng-160x160.png",
 		name: "Samsung Galaxy S21 Plus 5G",
 		price: 16990000,
 		promotion: [
@@ -174,7 +174,7 @@ data = [
 	},
 	{
 		id: 17,
-		image: "https://thegioiso360.vn/wp-content/uploads/2020/05/Samsung-Galaxy-A02s-xanh-160x160.png",
+		image: "Samsung-Galaxy-A02s-xanh-160x160.png",
 		name: "Samsung Galaxy A02s (3GB/32GB)",
 		price: 2990000,
 		promotion: [
@@ -187,7 +187,7 @@ data = [
 	},
 	{
 		id: 18,
-		image: "https://thegioiso360.vn/wp-content/uploads/2020/05/Samsung-A12-đen-160x160.png",
+		image: "Samsung-A12-đen-160x160.png",
 		name: "Samsung Galaxy A12 (6GB/128GB)",
 		price: 4290000,
 		promotion: [
@@ -200,7 +200,7 @@ data = [
 	},
 	{
 		id: 19,
-		image: "https://thegioiso360.vn/wp-content/uploads/2020/05/samsung-a12-trắng-160x160.png",
+		image: "samsung-a12-trắng-160x160.png",
 		name: "Samsung Galaxy A12",
 		price: 3890000,
 		promotion: [
@@ -213,7 +213,7 @@ data = [
 	},
 	{
 		id: 20,
-		image: "https://thegioiso360.vn/wp-content/uploads/2019/10/samsung-m11-xanh-160x160.png",
+		image: "samsung-m11-xanh-160x160.png",
 		name: "Samsung Galaxy M11",
 		price: 3390000,
 		promotion: [
@@ -225,7 +225,7 @@ data = [
 	},
 	{
 		id: 41,
-		image: "https://thegioiso360.vn/wp-content/uploads/2021/03/675f2f8e143fe761be2e-160x160.jpg",
+		image: "675f2f8e143fe761be2e-160x160.jpg",
 		name: "Ốp lưng nhũ kèm iring các mã",
 		price: 129000,
 		promotion: [
@@ -234,7 +234,7 @@ data = [
 	},
 	{
 		id: 42,
-		image: "https://thegioiso360.vn/wp-content/uploads/2021/03/Tai-nghe-Bluetooth-Hoco-M37-160x160.jpg",
+		image: "Tai-nghe-Bluetooth-Hoco-M37-160x160.jpg",
 		name: "Tai nghe Bluetooth Hoco M37",
 		price: 129000,
 		promotion: [
@@ -243,7 +243,7 @@ data = [
 	},
 	{
 		id: 43,
-		image: "https://thegioiso360.vn/wp-content/uploads/2021/03/Tai-nghe-bluetooth-Hoco-ES21-160x160.jpg",
+		image: "Tai-nghe-bluetooth-Hoco-ES21-160x160.jpg",
 		name: "Tai nghe bluetooth Hoco ES21",
 		price: 349000,
 		promotion: [
@@ -252,7 +252,7 @@ data = [
 	},
 	{
 		id: 44,
-		image: "https://thegioiso360.vn/wp-content/uploads/2021/03/Sạc-không-dây-KeepHone-ip-1215W-160x107.jpg",
+		image: "Sạc-không-dây-KeepHone-ip-1215W-160x107.jpg",
 		name: "Sạc không dây MagSafe 15w cho iphone 12",
 		price: 499000,
 		promotion: [
@@ -261,7 +261,7 @@ data = [
 	},
 	{
 		id: 45,
-		image: "https://thegioiso360.vn/wp-content/uploads/2021/03/Loa-Bluetooth-Thể-Thao-Hoco-BS36-160x160.jpg",
+		image: "Loa-Bluetooth-Thể-Thao-Hoco-BS36-160x160.jpg",
 		name: "Loa Bluetooth Thể Thao Hoco BS36",
 		price: 350000,
 		promotion: [
@@ -270,7 +270,7 @@ data = [
 	},
 	{
 		id: 46,
-		image: "https://thegioiso360.vn/wp-content/uploads/2021/03/Loa-Bluetooth-HOCO-BS38-160x160.jpg",
+		image: "Loa-Bluetooth-HOCO-BS38-160x160.jpg",
 		name: "Loa Bluetooth HOCO BS38",
 		price: 450000,
 		promotion: [
@@ -279,7 +279,7 @@ data = [
 	},
 	{
 		id: 47,
-		image: "https://thegioiso360.vn/wp-content/uploads/2021/03/Loa-bluetooth-HOCO.-BS33-Chống-nước-160x160.jpg",
+		image: "Loa-bluetooth-HOCO.-BS33-Chống-nước-160x160.jpg",
 		name: "Loa bluetooth Hoco BS33 Chống nước",
 		price: 399000,
 		promotion: [
@@ -288,7 +288,7 @@ data = [
 	},
 	{
 		id: 48,
-		image: "https://thegioiso360.vn/wp-content/uploads/2021/03/Cáp-sạc-Coteetci-iWatch-WS9-160x153.jpeg",
+		image: "Cáp-sạc-Coteetci-iWatch-WS9-160x153.jpeg",
 		name: "Cáp sạc Coteetci iWatch WS9",
 		price: 249000,
 		promotion: [
@@ -297,7 +297,7 @@ data = [
 	},
 	{
 		id: 49,
-		image: "https://thegioiso360.vn/wp-content/uploads/2021/03/Dây-Cáp-Sạc-Lightning-Pisen-Power-Teen-Đầu-Sạc-Chữ-L-160x160.jpg",
+		image: "Dây-Cáp-Sạc-Lightning-Pisen-Power-Teen-Đầu-Sạc-Chữ-L-160x160.jpg",
 		name: "Dây Cáp Sạc Lightning Pisen Power Teen Đầu Sạc Chữ L",
 		price: 79000,
 		promotion: [
@@ -306,7 +306,7 @@ data = [
 	},
 	{
 		id: 50,
-		image: "https://thegioiso360.vn/wp-content/uploads/2021/03/Giá-Đỡ-Điện-Thoại-Trên-Xe-Hơi-Hoco-CA28-160x160.jpg",
+		image: "Giá-Đỡ-Điện-Thoại-Trên-Xe-Hơi-Hoco-CA28-160x160.jpg",
 		name: "Giá Đỡ Điện Thoại Trên Xe Hơi Hoco CA28",
 		price: 199000,
 		promotion: [
