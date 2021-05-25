@@ -2,7 +2,8 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Đặt hàng</title>
+	<!-- sửa title -->
+	<title>Tìm kiếm</title>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css">
 	<script type="text/javascript" scr="../js/jquery-3.6.0.min.js"></script>
 	<script type="text/javascript" src="../js/popper.min.js"></script>
@@ -14,9 +15,11 @@
 	<link rel="stylesheet" type="text/css" href="../css/header.css">
 	<link rel="stylesheet" type="text/css" href="../css/footer.css">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<link rel="stylesheet" type="text/css" href="../css/dathang.css">
+	<!-- liên kết đến file js và css ở đây -->
+
+	<!-- end -->
 </head>
-<body >
+<body>
 	<!-- header -->
 	<div class="row header">
 		<div class="col-xl-4 col-sm-12 logo">
@@ -54,93 +57,18 @@
 	<!-- end header -->
 	<!-- content -->
 	<div class="row main">
-		<div class="col-xl-6 col-sm-10 col-11">
-			<!-- product info -->
-			<div class="product-info">
+		<!-- code vào đây -->
+		<div class="row product">
+			<div>
+				<h4>Kết quả tìm kiếm cho "<span class="keyword">Iphone</span>"</h4>
 			</div>
-			<!-- end product info -->
-			<!-- total -->
-			<div class="row section-total">
-				<table>
-					<tr>
-						<td style="text-align: left">Tạm tính:</td>
-						<td class="price" style="text-align: right; color: black;"><span class="total"></span><sup>đ</sup></td>
-					</tr>
-					<tr>
-						<td style="text-align: left; font-weight: bold;">Tổng tiền:</td>
-						<td class="price" style="text-align: right;"><span class="total"></span><sup>đ</sup></td>
-					</tr>
-				</table>
-			</div>
-			<!-- end total -->
-			<!-- customer info -->
-			<form onsubmit="return false;">
-				<div class="customer-info">
-					
-					<h5>Thông tin khách hàng</h5>
+			<p class="hetSp" style="font-size: -webkit-xxx-large;display: none">Không có sản phẩm phù hợp</p>
+			<div class="row list-product">
 				
-					<div>
-						<div>
-							<input type="radio" name="gender" value="Anh" id="male" checked="checked">
-							<label for="male" style="margin-right: 20px;">Anh</label>
-						</div>
-						<div>
-							<input type="radio" name="gender" value="Chị" id="female">
-							<label for="female">Chị</label>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xl-6 col-sm-6">
-							<input class="form-control" type="text" name="fullname" placeholder="Họ và tên" maxlength="30">
-							<div class="form-text" style="color: #ed3237"></div>
-						</div>
-						<div class="col-xl-6 col-sm-6">
-							<input class="form-control" type="text" name="phone" placeholder="Số điện thoại">
-							<div class="form-text" style="color: #ed3237"></div>
-						</div>
-					</div>
-					<h5>Chọn cách thức giao hàng</h5>
-					<div>
-						<div>
-							<input type="radio" name="method-delivery" value="Giao tận nơi" id="method-home" checked="checked">
-							<label for="method-home" style="margin-right: 20px;">Giao tận nơi</label>
-						</div>
-						<div>
-							<input type="radio" name="method-delivery" value="Nhận tại cửa hàng" id="method-store">
-							<label for="method-store">Nhận tại cửa hàng</label>
-						</div>
-					</div>
-					<div>
-						<input class="form-control" type="text" name="address" placeholder="Địa chỉ" maxlength="50">
-						<div class="form-text" style="color: #ed3237"></div>
-					</div>
-					<h5>Chọn cách thức thanh toán</h5>
-					<div>
-						<div>
-							<input type="radio" name="method-pay" value="Thanh toán khi nhận hàng" id="method-cash" checked="checked">
-							<label for="method-cash" style="margin-right: 20px;">Thanh toán khi nhận hàng</label>
-						</div>
-						<div>
-							<input type="radio" name="method-pay" value="Thanh toán bằng thẻ ngân hàng" id="method-card">
-							<label for="method-card">Thanh toán bằng thẻ ngân hàng</label>
-						</div>
-					</div>
-					<div>
-						<input class="form-control" type="text" name="other" placeholder="Yêu cầu khác (không bắt buộc)">
-					</div>
-
-				</div>
-				<!-- end customer info -->
-				<div class="dathang">
-					<button type="submit" class="btn btn-dathang btn-custom" style="width: 100%">Đặt Hàng</button>
-				</div>
-			</form>
+			</div>
 		</div>
-		
 	</div>
-
 	<!-- end content -->
-
 	<!-- footer -->
 	<div class="row footer">
 		<div class="col-sm-6 col-6">
@@ -159,18 +87,17 @@
 		</div>
 	</div>
 	<!-- end footer -->
-
 	<script src="../js/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="../js/data.js"></script>
 	<script src="../js/main.js"></script>
-	<script src="../js/dathang.js"></script>
+	<script src="../js/timkiem.js"></script>
 	</script>
 	<script type="text/javascript">
 		url = window.location.href;
 		function start(){
 
-			console.log(JSON.parse(localStorage["cart"]));
-			renderData();
+			
+			search();
 		}
 		start();
 		
