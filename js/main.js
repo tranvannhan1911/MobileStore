@@ -155,6 +155,7 @@ function renderConstraint(){
 	// check login
 	console.log(localStorage["login"]);
 	if(localStorage["login"] == 1){// đã đăng nhập
+		$('.acction-user').text(localStorage["phone"]);
 		$('.item-dangky').hide();
 		$('.item-dangnhap').hide();
 	}else{
@@ -162,6 +163,8 @@ function renderConstraint(){
 		$('.item-dangxuat').hide();
 		// $('.item-dangnhap').hide();
 	}
+
+
 }
 
 renderConstraint();
@@ -174,4 +177,21 @@ $('.sanpham').click(function(){
 $('.btn-search').click(function(){
 	localStorage["search"] = $('#txt-search').val();
 	window.location.href = "timkiem.html";
+});
+
+$(".a-login").click(function(){
+	var url = window.location.href;
+	var arr = url.split("/");
+	var refer = arr[arr.length-1];
+	if(refer != "dangnhap.html" && refer != "dangky.html" )
+		localStorage["refer"] = refer;
+});
+
+$(".a-register").click(function(){
+	var url = window.location.href;
+	var arr = url.split("/");
+	var refer = arr[arr.length-1];
+	console.log(refer);
+	if(refer != "dangnhap.html" && refer != "dangky.html" )
+		localStorage["refer"] = refer;
 });

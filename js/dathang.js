@@ -10,7 +10,7 @@ function renderData(){
 		product = get_product(cart[i]["id"]);
 		html += '<div class="row" data-id='+cart[i]["id"]+'>'
 				+'	<div class="col-xl-2 col-sm-3 col-3" style="text-align: center;">'
-				+'		<img src="'+product["image"]+'">'
+				+'		<img src="'+IMAGE_PATH + product["image"]+'">'
 				+'		<a class="btn-xoa"><i class="far fa-trash-alt"></i> Xóa</a>'
 				+'	</div>'
 				+'	<div class="col-xl-10 col-sm-9 col-9">'
@@ -28,6 +28,18 @@ function renderData(){
 	$(".product-info").append(html);
 	cal_total();
 
+	if(localStorage["login"] == 1){
+		$('[name=phone]').attr('disabled', 'disabled');
+		$('[name=phone]').val(localStorage["phone"]);
+		// $('[name=gender]').val(localStorage["gender"]);
+		$('[name=fullname]').val(localStorage["name"]);
+		$('[name=address]').val(localStorage["address"]);
+		console.log(localStorage["gender"]);
+		if(localStorage["gender"] == "Chị"){
+			$('[value=Chị]').attr('checked', 'checked');
+		}
+
+	}
 	var btn_xoa = $(".btn-xoa");
 	var dec = $(".btn-decrease");
 	var inc = $(".btn-increase");
@@ -96,14 +108,6 @@ function xoa(){
 	cal_total();
 }
 
-
-
-
-
-
-
-
-
 $("[name=fullname]").blur(check_fullname);
 
 $("[name=phone]").blur(check_phone);
@@ -125,6 +129,8 @@ $('.btn-dathang').click(function(){
 	if(!check_fullname() || !check_phone() || !check_diachi()){
 		return;
 	}
+
+	// lưu thông tin đơn hàng
 	localStorage["gender"] = gender;
 	localStorage["name"] = fullname;
 	localStorage["phone"] = phone;
@@ -132,5 +138,28 @@ $('.btn-dathang').click(function(){
 	localStorage["method-delivery"] = method_delivery;
 	localStorage["method-pay"] = method_pay;
 	localStorage["other"] = other;
+
+	// lưu thông tin cá nhân
+	var account_list;
+	try{
+		account_list = JSON.parse(localStorage["account"]);
+	}catch{
+		account_list = new Array();
+	}
+	if(localStorage["login"] == 1){
+		
+		for(var i =0; i<account_list.length; i++){
+			if(account_list[i]["phone"] == localStorage["phone"]){
+				account_list[i]["gender"] = gender;
+				account_list[i]["name"] = fullname;
+				account_list[i]["address"] = address;
+				localStorage["account"] = JSON.stringify(account_list);
+				break;
+			}
+		}
+	}else{
+		account_list.push({"phone": phone, "pass": "", "name": fullname, "address": address, "gender": gender});
+		localStorage["account"] = JSON.stringify(account_list);
+	}
 	window.location.href = "done.html";
 });

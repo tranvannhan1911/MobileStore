@@ -51,8 +51,8 @@
 					Xin chào
 				</button>
 				<ul class="dropdown-menu">
-					<li class="item-dangky"><a class="dropdown-item" href="dangky.html"><i class="fas fa-user-plus"></i> Đăng ký</a></li>
-					<li class="item-dangnhap"><a class="dropdown-item" href="dangnhap.html"><i class="fas fa-sign-in-alt" style="margin-right: 3px;"></i> Đăng nhập</a></li>
+					<li class="item-dangky"><a class="dropdown-item a-register" href="dangky.html"><i class="fas fa-user-plus"></i> Đăng ký</a></li>
+					<li class="item-dangnhap"><a class="dropdown-item a-login" href="dangnhap.html"><i class="fas fa-sign-in-alt" style="margin-right: 3px;" ></i> Đăng nhập</a></li>
 					<li class="item-giohang"><a class="dropdown-item" href="giohang.html"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a></li>
 					<li class="item-dangxuat"><hr class="dropdown-divider"></li>
     				<li class="item-dangxuat"><a class="dropdown-item btn-logout" href="#"  style="color: #ed3237"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a></li>
@@ -68,7 +68,9 @@
 		      <!--dang ky-->
 			  <div class="center-align ">
 				<div class-="form-control center-align">
+
 					<form action="" class="form sign-up" onsubmit="return false">
+						<h1 class="title">Đăng ký</h1>
 						<div class="input-group">
 							<i class='bx bxs-user-rectangle'></i>
 							<input type="text" name="phone" placeholder="số điện thoại" autofocus="autofocus">
@@ -133,11 +135,13 @@
 	<script src="../js/main.js"></script>
 	<!-- <script src="../js/dangnhap.js"></script> -->
 	<script type="text/javascript">
+		// localStorage.clear();
 		$('.btn-register').click(function(){
+
 			var phone = removeAscent($('[name=phone]').val());
 			var pass = $('[name=pass]').val();
 			var repass = $('[name=repass]').val();
-			console.log(phone, pass, repass);
+			
 			// alert("h");
 			if(!check_regex_2(phone, /^0[1-9]\d{8}$/, "Số điện thoại không hợp lệ")){
 				$('[name=phone]').focus();
@@ -155,6 +159,28 @@
 				return;	
 			}
 			$('.msg').text("");
+
+			// lưu account vào localstorage
+			var account_list;
+			try{
+				account_list = JSON.parse(localStorage["account"]);
+			}catch{
+				account_list = new Array();
+			}
+			// console.log(account_list);
+			// kiểm tra xem tài khoản đã tồn tại chưa
+			for(var i =0; i<account_list.length; i++){
+				if(account_list[i]["phone"] == phone && account_list[i]["pass"] == ""){
+					account_list[i]["pass"] = pass;
+					localStorage["account"] = JSON.stringify(account_list);
+					return;
+				}else if(account_list[i]["phone"] == phone){
+					$('.msg').text("Số điện thoại đã tồn tại");
+					return;
+				}
+			}
+			account_list.push({"phone": phone, "pass": pass, "name":"", "address": "", "gender": ""});
+			localStorage["account"] = JSON.stringify(account_list);
 			window.location.href = "dangnhap.html";
 		});
 
