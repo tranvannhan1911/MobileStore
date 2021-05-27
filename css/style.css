@@ -154,6 +154,13 @@ a:hover{
 	color: #ed3237;
 }
 
+.title{
+	display: inline-block;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #ed3237;
+    margin-bottom: 15px;
+}
+
 @media only screen and (max-width: 991px) {
   	.space{
   		display: none;

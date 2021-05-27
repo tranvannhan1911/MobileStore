@@ -19,7 +19,7 @@ function renderData(){
 		product = get_product(cart[i]["id"]);
 		html += '<div class="item row">'
 				+'	<div class="col-xl-2 col-lg-2 col-sm-3 col-3">'
-				+'		<img src="'+product["image"]+'">'
+				+'		<img src="'+IMAGE_PATH + product["image"]+'">'
 				+'	</div>'
 				+'	<div class="col-xl-7 col-lg-7 col-sm-5 col-5">'
 				+'		<h5>'+product["name"]+'</h5>'
@@ -33,5 +33,6 @@ function renderData(){
 	}
 
 	$(".list-product").append(html);
-	// localStorage.clear();
+	localStorage["cart"] = new Array();
+	// console.log(localStorage["cart"]);
 }
