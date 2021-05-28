@@ -2,7 +2,8 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Cửa hàng bán điện thoại di động</title>
+	<!-- sửa title -->
+	<title> Giỏ Hàng </title>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css">
 	<script type="text/javascript" scr="../js/jquery-3.6.0.min.js"></script>
 	<script type="text/javascript" src="../js/popper.min.js"></script>
@@ -14,9 +15,12 @@
 	<link rel="stylesheet" type="text/css" href="../css/header.css">
 	<link rel="stylesheet" type="text/css" href="../css/footer.css">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<link rel="stylesheet" type="text/css" href="../css/index.css">
+	<link rel="stylesheet" type="text/css" href="../css/dathang.css">
+	<!-- liên kết đến file js và css ở đây -->
+    <!-- <link rel="stylesheet" type="text/css" href="../css/giohang.css"> -->
+	<!-- end -->
 </head>
-<body >
+<body>
 	<!-- header -->
 	<div class="row header">
 		<div class="col-xl-4 col-sm-12 logo">
@@ -54,100 +58,32 @@
 	<!-- end header -->
 	<!-- content -->
 	<div class="row main">
-		<!-- banner -->
-		<div class="row banner">
-			<div class="col-lg-8">
-				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" >
-					<div class="carousel-indicators">
-						<button style="background-color: black;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-						<button style="background-color: black;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-						<button style="background-color: black;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-					</div>
-					<div class="carousel-inner">
-						<div class="carousel-item active" >
-							<a href="chitietsanpham.html?id=10">
-								<img src="../images/BÌA-IP-12-1.png" class="d-block w-100" alt="...">
-							</a>
-						</div>
-						<div class="carousel-item">
-							<a href="chitietsanpham.html?id=15">
-								<img src="../images/GALAXY-S21-6.png" class="d-block w-100" alt="...">
-							</a>
-						</div>
-						<div class="carousel-item">
-							<a href="">
-								<img src="../images/BÌA-STAR-5 (1).png" class="d-block w-100" alt="...">
-							</a>
-						</div>
-					</div>
-					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-						<!-- <span class="carousel-control-prev-icon" 
-							aria-hidden="true"></span> -->
-						<i class="fas fa-chevron-left" style="color: black;font-size: 30px;"></i>
-						<span class="visually-hidden">Previous</span>
-					</button>
-					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-						<i class="fas fa-chevron-right" style="color: black;font-size: 30px;"></i>
-						<!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-						<span class="visually-hidden">Next</span>
-					</button>
-				</div>
-				<!-- <img src="../images/BÌA-IP-12-1.png" style="width: 100%; height: 100%;"> -->
+		<div class="col-xl-6 col-sm-10 col-11">
+			<!-- product info -->
+			<div class="product-info">
 			</div>
-			<div class="col-lg-4">
-				<div class="row">
-					<a href="">
-						<img src="../images/BÌA-STAR-5.png" style="width: 100%">
-					</a>
-				</div>
-				<div class="row">
-					<a href="chitietsanpham.html?id=13">
-						<img src="../images/BANNER-SS-NHO.png" style="width: 100%">
-					</a>
-				</div>
+			<!-- end product info -->
+			<!-- total -->
+			<div class="row section-total">
+				<table>
+					<tr>
+						<td style="text-align: left">Tạm tính:</td>
+						<td class="price" style="text-align: right; color: black;"><span class="total"></span><sup>đ</sup></td>
+					</tr>
+					<tr>
+						<td style="text-align: left; font-weight: bold;">Tổng tiền:</td>
+						<td class="price" style="text-align: right;"><span class="total"></span><sup>đ</sup></td>
+					</tr>
+				</table>
+			</div>
+			<!-- end total -->
+			<div class="dathang">
+				<a href="dathang.html" type="submit" class="btn btn-custom" style="width: 100%">Đặt Hàng</a>
 			</div>
 		</div>
-		<!-- end banner -->
-		<!-- khuyến mãi -->
-		<div class="row khuyenmai">
-			<div class="">
-				<h4>Khuyến mãi</h4>	
-			</div>
-			
-			<div class="list-khuyenmai">
-			</div>
-		</div>
-		<!-- apple -->
-		<div class="row product apple">
-			<div>
-				<h4>Apple</h4>
-			</div>
-			<div class="row list-product">
-				
-			</div>
-		</div>
-		<!-- end apple -->
-		<!-- samsung -->
-		<div class="row product samsung">
-			<div>
-				<h4>Samsung</h4>
-			</div>
-			<div class="row list-product">
-				
-			</div>
-		</div>
-		<!-- end samsung -->
-		<!-- phukien -->
-		<div class="row product phukien">
-			<div>
-				<h4>Phụ kiện</h4>
-			</div>
-			<div class="row list-product">
-				
-			</div>
-		</div>
-		<!-- end phukien -->
+		
 	</div>
+	<!-- end content -->
 	<!-- footer -->
 	<div class="row footer">
 		<div class="col-sm-6 col-6">
@@ -166,20 +102,22 @@
 		</div>
 	</div>
 	<!-- end footer -->
-
 	<script src="../js/jquery-1.11.0.min.js"></script>
 	<script type="text/javascript" src="../js/data.js"></script>
 	<script src="../js/main.js"></script>
-	<script type="text/javascript" src="../js/slide-khuyenmai.js"></script>
-	<script type="text/javascript" src="../js/render-product.js"></script>
+	<script src="../js/dathang.js"></script>
 	<script type="text/javascript">
+		url = window.location.href;
 		function start(){
-			render_khuyenmai();
-			slide_khuyenmai();
-			render_product(data, "apple");
-			render_product(data, "samsung");
-			render_product(data, "phukien");
-			localStorage["username"] = "tranvannhan1911";
+			var cart = get_cart();
+			if(cart.length == 0){
+				$('.main > div').css('background-color', 'white');
+				$('.main > div').css('padding', '50px 0px');
+				$('.main > div').html('<p><i class="fas fa-cart-plus" style="font-size:50px;color:#ed3237"></i></p><h2 style="margin-bottom: 20px">Không có sản phẩm nào trong giỏ hàng </h2><a href="index.html" class="btn btn-custom" style="padding: 5px 20px;">Về trang chủ</a>')
+				return;
+			}
+			// console.log(JSON.parse(localStorage["cart"]));
+			renderData();
 		}
 		start();
 		

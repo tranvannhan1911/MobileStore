@@ -3,233 +3,318 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- sửa title -->
-	<title>iPhone 12 Mini 64GB (Hàng công ty VN/A)</title>
+	<title>Tin Tức</title>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css">
 	<script type="text/javascript" scr="../js/jquery-3.6.0.min.js"></script>
 	<script type="text/javascript" src="../js/popper.min.js"></script>
 	<script type="text/javascript" src="../js/bootstrap/bootstrap.min.js"></script>
 	<script src="https://kit.fontawesome.com/e3ed4ab9af.js" crossorigin="anonymous"></script>
-    
+
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Jura:wght@700&family=Oi&family=Pacifico&family=Prompt&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../css/header.css">
 	<link rel="stylesheet" type="text/css" href="../css/footer.css">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<link rel="stylesheet" type="text/css" href="../css/tintuc.css">
 	<!-- liên kết đến file js và css ở đây -->
-
+	<link rel="stylesheet" type="text/css" href="../css/tintuc.css">
 	<!-- end -->
 </head>
 <body>
 	<!-- header -->
 	<div class="row header">
 		<div class="col-xl-4 col-sm-12 logo">
-			<a href=""><h3>Cửa Hàng Di động</h3></a>
+			<a href="index.html"><h3>Cửa Hàng Di động</h3></a>
 		</div>
 		<div class="col-xl-2 col-sm-12 search">
-			<form action="">
-				<input type="text" id="txt-search" name="search" placeholder="search">
-				<button type="submit"><i class="fas fa-search"></i></button>
+			<form action="" onsubmit="return false">
+				<input type="text" id="txt-search" name="search" placeholder="Nội dung tìm kiếm">
+				<button type="submit" class="btn-search"><i class="fas fa-search"></i></button>
 			</form>
+			
 		</div>
 		<div class="col-xl-6 col-sm-12">
 			<ul class="menu">
-				<li><a href="apple.html"><i class="fab fa-apple" style="font-size: 25px;"></i>Apple</a></li>
-				<li><a href="samsung.html"><i class="fas fa-mobile-alt" style="font-size: 20px;"></i>Samsung</a></li>
-				<li><a href="phukien.html"><i class="fas fa-headphones-alt" style="font-size: 21px;"></i>Phụ kiện</a></li>
+				<li><a href="#" class="sanpham" data-type="apple"><i class="fab fa-apple" style="font-size: 25px;"></i>Apple</a></li>
+				<li><a href="#" class="sanpham" data-type="samsung"><i class="fas fa-mobile-alt" style="font-size: 20px;"></i>Samsung</a></li>
+				<li><a href="#" class="sanpham" data-type="phukien"><i class="fas fa-headphones-alt" style="font-size: 21px;"></i>Phụ kiện</a></li>
 				<li><a href="tintuc.html"><i class="far fa-newspaper" style="font-size: 21px;"></i>Tin tức</a></li>
+				<li><a href="gioithieu.html"><i class="fas fa-info"  style="font-size: 20px;"></i>Giới thiệu</a></li>
 			</ul>
 			<div class="btn-group user">
 				<button type="button" class="btn dropdown-toggle acction-user" data-bs-toggle="dropdown" aria-expanded="false">
 					Xin chào
 				</button>
 				<ul class="dropdown-menu">
-					<li><a class="dropdown-item" href="dangky.html"><i class="fas fa-user-plus"></i> Đăng ký</a></li>
-					<li><a class="dropdown-item" href="dangnhap.html"><i class="fas fa-sign-in-alt" style="margin-right: 3px;"></i> Đăng nhập</a></li>
-					<li><a class="dropdown-item" href="giohang.html"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a></li>
+					<li class="item-dangky"><a class="dropdown-item a-register" href="dangky.html"><i class="fas fa-user-plus"></i> Đăng ký</a></li>
+					<li class="item-dangnhap"><a class="dropdown-item a-login" href="dangnhap.html"><i class="fas fa-sign-in-alt" style="margin-right: 3px;" ></i> Đăng nhập</a></li>
+					<li class="item-giohang"><a class="dropdown-item" href="giohang.html"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a></li>
+					<li class="item-dangxuat"><hr class="dropdown-divider"></li>
+    				<li class="item-dangxuat"><a class="dropdown-item btn-logout" href="#"  style="color: #ed3237"><i class="fas fa-sign-out-alt"></i> Đăng xuất</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
 	<!-- end header -->
-
-	<div class="row main">
-		<!-- banner -->
-		<div class="row banner">
-			<div class="col-lg-8">
-				<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-					<div class="carousel-indicators">
-						<button style="background-color: black;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-						<button style="background-color: black;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-						<button style="background-color: black;" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-					</div>
-					<div class="carousel-inner">
-						<div class="carousel-item active">
-							<img src="../images/BÌA-IP-12-1.png" class="d-block w-100" alt="...">
-						</div>
-						<div class="carousel-item">
-							<img src="../images/GALAXY-S21-6.png" class="d-block w-100" alt="...">
-						</div>
-						<div class="carousel-item">
-							<img src="../images/BÌA-STAR-5 (1).png" class="d-block w-100" alt="...">
-						</div>
-					</div>
-					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-						<!-- <span class="carousel-control-prev-icon" 
-							aria-hidden="true"></span> -->
-						<i class="fas fa-chevron-left" style="color: black;font-size: 30px;"></i>
-						<span class="visually-hidden">Previous</span>
-					</button>
-					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-						<i class="fas fa-chevron-right" style="color: black;font-size: 30px;"></i>
-						<!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-						<span class="visually-hidden">Next</span>
-					</button>
-				</div>
-				<!-- <img src="../images/BÌA-IP-12-1.png" style="width: 100%; height: 100%;"> -->
-			</div>
-			<div class="col-lg-4">
-				<div class="row">
-					<img src="../images/BÌA-STAR-5.png" style="width: 100%">
-				</div>
-				<div class="row">
-					<img src="../images/BANNER-SS-NHO.png" style="width: 100%">
-				</div>
-			</div>
-		</div>
-		<!-- end banner -->
-
 	<!-- content -->
 	<div class="row main">
-		
-		<div class="">
-			<h4>Tin Tức</h4>	
-		</div>
+		<!-- code vào đây -->
+		<div class="hotweek">
+			<div class="_featured">
 
-		<div class="wrapper">
-			<div class="view01">
-				<div class="top">
-					<h4>tips</h4>
-				</div>
-				<img src="../images/BÌA-STAR-5 (1).png" alt="">
-				<div class="bottom">
-					
-					<a href="">Tao tai khoan Memrise Pro 1 nam 59.99$</a><br>
-					<i>22:47:32, 8/10/2019</i>
-					<p>
-						Đọc báo dantri - Tin tức mới nhất, báo nói đọc tin tức online Việt Nam Thế giới nóng nhất trong ngày, Kinh doanh Việc làm, Pháp luật Đời sống, Giáo dục Sức khỏe, Thể thao Giải trí,
-					</p>
-				</div>
+				<a href="baiviet.html" class="first-child">
+					<img width="400" height="500" src="https://cdn.tgdd.vn/hoi-dap/916590/Thumbnail/huong-dan-bat-tat-ma-pin-cho-sim-tren-iphone-thumb.jpg">
+					<h3>
+						[Video] Cách khóa SIM iPhone để bảo mật và đặt mật khẩu cho SIM
+						<span class="ncom"><i class="iconask-com"></i>2</span>
+					</h3>
+					<span>iPhone - iOS</span>
+				</a>
+
 			</div>
-	
-	
-			<div class="view01">
-				<div class="top">
-					<h4>tips</h4>
-				</div>
-				<img src="../images/BÌA-IP-12-1.png" alt="">
-				<div class="bottom">
-					
-					<a href="">Kiểm tra đối tượng Empty(Rỗng)</a><br>
-					<i>22:47:32, 8/10/2019</i>
-					<p>
-						Lorem ipsum Lorem ipsum dolor sit amet consectetur dolor sit amet consectetur adipisicinratione illum earum mollitia voluptatem excepturi? Omnis dolorem sint nemo?
-					</p>
-				</div>
-			</div>
-	
-	
-			<div class="view01">
-				<div class="top">
-					<h4>tips</h4>
-				</div>
-				<img src="../images/BANNER-SS-NHO.png" alt="">
-				<div class="bottom">
-					
-					<a href="">Acount Grammarly Premium trong Reactji</a><br>
-					<i>13:47:32, 05/06/2021</i>
-					<p>
-						Các thành viên hội đồng kiến nghị các cơ quan chức năng xem xét tạo điều kiện để giáo viên Khúc Xuân H. có cơ hội sửa chữa lỗi lầm của mình.
-					</p>
-				</div>
-			</div>
-	  </div>
-	
-	  <div class="wrapper">
-		<div class="view01">
-			<div class="top">
-				<h4>tips</h4>
-			</div>
-			<img src="../images/BÌA-STAR-5 (1).png" alt="">
-			<div class="bottom">
+			<div class="_list">
+				<h4>BÀI VIẾT ĐƯỢC XEM NHIỀU</h4>
+				<div>
+					<h3>
+						<b>1</b>
+						<a href="baiviet.html">
+							Cách sửa lỗi mất biểu tượng pin trên thanh taskbar Windows 10, 7, 8
+							<span class="ncom"><i class="iconask-com"></i>285</span>
+						</a>
+					</h3>
 				
-				<a href="">Tao tai khoan Memrise Pro 1 nam 59.99$</a><br>
-				<i>22:47:32, 8/10/2019</i>
-				<p>
-					Đọc báo dantri - Tin tức mới nhất, báo nói đọc tin tức online Việt Nam Thế giới nóng nhất trong ngày, Kinh doanh Việc làm, Pháp luật Đời sống, Giáo dục Sức khỏe, Thể thao Giải trí,
-				</p>
+					<h3>
+						<b>2</b>
+						<a href="baiviet.html">
+							Cách khắc phục lỗi nhấp nháy ánh sáng khi quay video trên iPhone
+						</a>
+					</h3>
+
+					
+					<h3>
+						<b>3</b>
+						<a href="baiviet.html">
+							Cách tạo thiệp chúc mừng năm mới Tết 2021 trên điện thoại cực đơn giản
+						</a>
+					</h3>
+					
+					<h3>
+						<b>4</b>
+						<a href="baiviet.html">
+							Cách chặn người khác xem story Facebook trên điện thoại, máy tính
+						</a>
+					</h3>
+				</div>
 			</div>
-		</div>
-
-
-		<div class="view01">
-			<div class="top">
-				<h4>tips</h4>
-			</div>
-			<img src="../images/BÌA-IP-12-1.png" alt="">
-			<div class="bottom">
-				
-				<a href="">Kiểm tra đối tượng Empty(Rỗng)</a><br>
-				<i>22:47:32, 8/10/2019</i>
-				<p>
-					Lorem ipsum Lorem ipsum dolor sit amet consectetur dolor sit amet consectetur adipisicinratione illum earum mollitia voluptatem excepturi? Omnis dolorem sint nemo?
-				</p>
-			</div>
-		</div>
-
-
-		<div class="view01">
-			<div class="top">
-				<h4>tips</h4>
-			</div>
-			<img src="../images/BANNER-SS-NHO.png" alt="">
-			<div class="bottom">
-				
-				<a href="">Acount Grammarly Premium trong Reactji</a><br>
-				<i>13:47:32, 05/06/2021</i>
-				<p>
-					Các thành viên hội đồng kiến nghị các cơ quan chức năng xem xét tạo điều kiện để giáo viên Khúc Xuân H. có cơ hội sửa chữa lỗi lầm của mình.
-				</p>
-			</div>
-		</div>
-  </div>
-	
-
-	</div>
-	<!-- end content -->
-	<div class="view-more ">
-		<a href="javascript:;">Xem thêm <span class="remain">14</span></a>
-
-	</div>
-	<!-- footer -->
-	<div class="row footer">
-		<div class="col-sm-6 col-6">
-			<h4>Thông tin liên lạc</h4>
-			<p>Gọi mua hàng: <a href="tel:19000000">1900.0000</a></p>
-			<p>Khiếu nại, góp ý: <a href="tel:19000000">1900.0000</a></p>
-			<p>Thời gian phục vụ: 8h - 22h</p>
-			<p>Email: <a href="mailto:tranvannhan1911@gmail.com">nhom7@gmail.vn</a></p>
-		</div>
-		<div class="col-sm-6 col-6">
-			<h4>Thông tin hỗ trợ</h4>
-			<p><a href="product_detail.html">Gói bảo hàng toàn diện 360</a></p>
-			<p><a href="product_detail.html">Chính sách đổi trả</a></p>
-			<p><a href="product_detail.html">Chính sách bảo hành</a></p>
-			<p></p>
 		</div>
 	</div>
-	<!-- end footer -->
+	<div class="popup_question">
+		<a href="javascript:;" class="close_popup" onclick="closeInputQuestionv2()"><img src="../images/icon-close-button-vector-20409198.jpg"></a>
+		<h3>Đặt câu hỏi</h3>
 
+		<div class="area_input">
+			<div class="question">
+				<span class="plIq" onclick="showInputQuestion()">Nhập nội dung câu hỏi của bạn</span>
+				<div id="txtContentQS" contenteditable="true" placeholder="Nhập nội dung câu hỏi của bạn" class="hide"></div>
+				<div id="lberror" class="hide"></div>
+			</div>
+			<div class="barsend">
+				<a id="spanImg" href="javascript:;"><i class="iconask-pic"></i>Thêm ảnh</a>
+				<button type="submit" onclick="sendQuestionCustomer()">Gửi</button>
+				<input id="upNotTitle" type="file" multiple="multiple" hidden="hidden" accept="image/x-png, image/gif, image/jpeg">
+			</div>
+
+			<input type="hidden" class="txtName" value="">
+			<input type="hidden" class="txtMail" value="">
+			<input type="hidden" class="txtUserID" value="">
+		</div>	
+	</div>
+	<div class="overpopup"></div>
+	<ul class="listask">
+		<li data-idx="1" data-id="920010">
+			<a href="baiviet.html">
+				<img class=" lazyloaded" data-original="../images/tintuc/co-nen-mua-iphone-xach-tay-26.jpg" width="95" alt="[Có nên mua iphone 5s xách tay" src="../images/tintuc/co-nen-mua-iphone-xach-tay-26.jpg">
+				<h3>
+					Có nên mua iphone 5s xách tay
+				</h3>
+
+				<div>
+
+					<label>iPhone - iOS</label>
+					<span class="dot_">•</span>
+					<label>18 phút trước</label>
+				</div>
+			</a>
+		</li>
+		<li data-idx="1" data-id="920010">
+			<a href="baiviet.html">
+				<img class=" lazyloaded" data-original="../images/tintuc/thumcaivantayiphone.jpg" width="95" alt="[Video] Cách cài đặt vân tay (Touch ID) trên iPhone cực đơn giản" src="../images/tintuc/thumcaivantayiphone.jpg">
+				<h3>
+					[Video] Cách cài đặt vân tay (Touch ID) trên iPhone cực đơn giản
+				</h3>
+
+				<div>
+
+					<label>iPhone - iOS</label>
+					<span class="dot_">•</span>
+					<label>18 phút trước</label>
+				</div>
+			</a>
+		</li>
+		<li data-idx="2" data-id="1344888">
+			<a href="baiviet.html">
+
+				<img class=" lazyloaded" data-original="../images/tintuc/tong-hop-5-group-ve-cong-nghe-tren-facebook-ban-nen-tham(thumb).jpg" width="95" alt="Tổng hợp 5 group về công nghệ trên Facebook bạn nên tham gia" src="../images/tintuc/tong-hop-5-group-ve-cong-nghe-tren-facebook-ban-nen-tham(thumb).jpg">
+				<h3>
+					Tổng hợp 5 group về công nghệ trên Facebook bạn nên tham gia
+				</h3>
+
+				<div>
+
+					<label>Mạng xã hội</label>
+					<span class="dot_">•</span>
+					<label>18 phút trước</label>
+				</div>
+			</a>
+		</li>
+		<li data-idx="3" data-id="1354725">
+			<a href="baiviet.html">
+				<img class=" lazyloaded" data-original="../images/tintuc/cach-su-dung-launchpad-tren-macbook-don-gian-cuc-chi-tiet.thumbnail.001.jpeg" width="95" alt="Cách sử dụng Launchpad trên MacBook đơn giản, cực chi tiết từ A-Z" src="../images/tintuc/cach-su-dung-launchpad-tren-macbook-don-gian-cuc-chi-tiet.thumbnail.001.jpeg">
+				<h3>
+					Cách sử dụng Launchpad trên MacBook đơn giản, cực chi tiết từ A-Z
+				</h3>
+
+				<div>
+
+					<label>Máy tính - Laptop - Tablet</label>
+					<span class="dot_">•</span>
+					<label>33 phút trước</label>
+				</div>
+			</a>
+		</li>
+		<li data-idx="4" data-id="921569">
+			<a href="baiviet.html">
+				<img class=" lazyloaded" data-original="../images/tintuc/cach-vua-xem-youtube-vua-luot-web-tren-ios-921569-thumb.jpg" width="95" alt="[Video] Cách vừa xem YouTube vừa lướt web trên iPhone cực đơn giản" src="../images/tintuc/cach-vua-xem-youtube-vua-luot-web-tren-ios-921569-thumb.jpg">
+				<h3>
+					[Video] Cách vừa xem YouTube vừa lướt web trên iPhone cực đơn giản
+				</h3>
+
+				<div>
+
+					<label>iPhone - iOS</label>
+					<span class="dot_">•</span>
+					<label>34 phút trước</label>
+				</div>
+			</a>
+		</li>
+		<li data-idx="1" data-id="920010" style="display:none">
+			<a href="baiviet.html">
+				<img class=" lazyloaded" data-original="../images/tintuc/co-nen-mua-iphone-xach-tay-26.jpg" width="95" alt="[Có nên mua iphone 5s xách tay" src="../images/tintuc/co-nen-mua-iphone-xach-tay-26.jpg">
+				<h3>
+					Có nên mua iphone 5s xách tay
+				</h3>
+
+				<div>
+
+					<label>iPhone - iOS</label>
+					<span class="dot_">•</span>
+					<label>18 phút trước</label>
+				</div>
+			</a>
+		</li>
+		<li data-idx="1" data-id="920010" style="display:none">
+			<a href="baiviet.html">
+				<img class=" lazyloaded" data-original="../images/tintuc/thumcaivantayiphone.jpg" width="95" alt="[Video] Cách cài đặt vân tay (Touch ID) trên iPhone cực đơn giản" src="../images/tintuc/thumcaivantayiphone.jpg">
+				<h3>
+					[Video] Cách cài đặt vân tay (Touch ID) trên iPhone cực đơn giản
+				</h3>
+
+				<div>
+
+					<label>iPhone - iOS</label>
+					<span class="dot_">•</span>
+					<label>18 phút trước</label>
+				</div>
+			</a>
+		</li>
+		<li data-idx="2" data-id="1344888" style="display:none">
+			<a href="baiviet.html">
+
+				<img class=" lazyloaded" data-original="../images/tintuc/tong-hop-5-group-ve-cong-nghe-tren-facebook-ban-nen-tham(thumb).jpg" width="95" alt="Tổng hợp 5 group về công nghệ trên Facebook bạn nên tham gia" src="../images/tintuc/tong-hop-5-group-ve-cong-nghe-tren-facebook-ban-nen-tham(thumb).jpg">
+				<h3>
+					Tổng hợp 5 group về công nghệ trên Facebook bạn nên tham gia
+				</h3>
+
+				<div>
+
+					<label>Mạng xã hội</label>
+					<span class="dot_">•</span>
+					<label>18 phút trước</label>
+				</div>
+			</a>
+		</li>
+		<li data-idx="3" data-id="1354725" style="display:none">
+			<a href="baiviet.html">
+				<img class=" lazyloaded" data-original="../images/tintuc/cach-su-dung-launchpad-tren-macbook-don-gian-cuc-chi-tiet.thumbnail.001.jpeg" width="95" alt="Cách sử dụng Launchpad trên MacBook đơn giản, cực chi tiết từ A-Z" src="../images/tintuc/cach-su-dung-launchpad-tren-macbook-don-gian-cuc-chi-tiet.thumbnail.001.jpeg">
+				<h3>
+					Cách sử dụng Launchpad trên MacBook đơn giản, cực chi tiết từ A-Z
+				</h3>
+
+				<div>
+
+					<label>Máy tính - Laptop - Tablet</label>
+					<span class="dot_">•</span>
+					<label>33 phút trước</label>
+				</div>
+			</a>
+		</li>
+		<li data-idx="4" data-id="921569" style="display:none">
+			<a href="baiviet.html">
+				<img class=" lazyloaded" data-original="../images/tintuc/cach-vua-xem-youtube-vua-luot-web-tren-ios-921569-thumb.jpg" width="95" alt="[Video] Cách vừa xem YouTube vừa lướt web trên iPhone cực đơn giản" src="../images/tintuc/cach-vua-xem-youtube-vua-luot-web-tren-ios-921569-thumb.jpg">
+				<h3>
+					[Video] Cách vừa xem YouTube vừa lướt web trên iPhone cực đơn giản
+				</h3>
+
+				<div>
+
+					<label>iPhone - iOS</label>
+					<span class="dot_">•</span>
+					<label>34 phút trước</label>
+				</div>
+			</a>
+		</li>
+		<li id="morelist">
+			<a href="javascript:void(0)" onclick="LoadMoreQuestion();" class="viewmore">Xem thêm</a>
+		</li>
+	</ul>	
+</div>
+<!-- end content -->
+<!-- footer -->
+<div class="row footer">
+	<div class="col-sm-6 col-6">
+		<h4>Thông tin liên lạc</h4>
+		<p>Gọi mua hàng: <a href="tel:19000000">1900.0000</a></p>
+		<p>Khiếu nại, góp ý: <a href="tel:19000000">1900.0000</a></p>
+		<p>Thời gian phục vụ: 8h - 22h</p>
+		<p>Email: <a href="mailto:tranvannhan1911@gmail.com">nhom7@gmail.vn</a></p>
+	</div>
+	<div class="col-sm-6 col-6">
+		<h4>Thông tin hỗ trợ</h4>
+		<p><a href="#">Gói bảo hàng toàn diện 360</a></p>
+		<p><a href="#">Chính sách đổi trả</a></p>
+		<p><a href="#">Chính sách bảo hành</a></p>
+		<p></p>
+	</div>
+</div>
+<!-- end footer -->
+<script src="../js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="../js/data.js"></script>
+<script src="../js/main.js"></script>
+<script type="text/javascript">
+	function LoadMoreQuestion(){
+		$('.listask > li').show();
+		$('#morelist').hide();
+	}
 	
+</script>
 </body>
 </html>

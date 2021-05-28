@@ -1,8 +1,6 @@
 function renderData(){
 	var cart = get_cart();
-	if(cart.length == 0){
-		window.location.href = "index.html";
-	}
+	
 
 	var list_product = $(".product-info");
 	var html = "";

@@ -3,7 +3,7 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<!-- sửa title -->
-	<title>Tìm kiếm</title>
+	<title>Sitemap</title>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap/bootstrap.min.css">
 	<script type="text/javascript" scr="../js/jquery-3.6.0.min.js"></script>
 	<script type="text/javascript" src="../js/popper.min.js"></script>
@@ -15,30 +15,8 @@
 	<link rel="stylesheet" type="text/css" href="../css/header.css">
 	<link rel="stylesheet" type="text/css" href="../css/footer.css">
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
-	<link rel="stylesheet" type="text/css" href="../css/sanpham.css">
 	<!-- liên kết đến file js và css ở đây -->
-	<style type="text/css">
-		.product > div:nth-child(1){
-			text-align: left;
-			border-bottom: 2px solid #eee!important;
-			margin-bottom: 20px;
-		}
 
-		.product h4{
-		    margin: 15px 0 15px 0 !important;
-			border-bottom: none !important;
-    		/*display: block !important;*/
-    	}
-
-    	.Loc{
-    		display: inline-block;
-    		float: right;
-    	}
-
-    	.main{
-    		padding-top: 20px;
-    	}
-	</style>
 	<!-- end -->
 </head>
 <body>
@@ -79,45 +57,11 @@
 	<!-- end header -->
 	<!-- content -->
 	<div class="row main">
-
-		
-		<div class="row product active">
-			<div>
-				<h4>Kết quả tìm kiếm cho "<span class="keyword"></span>"</h4>
-				<div class="Loc">
-
-					<div class="filter">
-						<div class="btn-group">
-						  	<button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-						  		Sắp xếp theo
-						  	</button>
-						  	<ul class="dropdown-menu">
-						  		<li><a class="dropdown-item sort" data-sort="desc">Giá giảm dần</a></li>
-						  		<li><a class="dropdown-item sort" data-sort="insc">Giá tăng dần</a></li>
-						  	</ul>
-						</div>
-					</div>					
-
-					<div class="filter">
-						<div class="btn-group">
-						  	<button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-						  		Lọc theo giá
-						  	</button>
-						  	<ul class="dropdown-menu">
-						  		<li><a class="dropdown-item filter-price"data-start="0" data-end="1000000000">Tất cả</a></li>
-						  		<li><a class="dropdown-item filter-price"data-start="0" data-end="5000000">Dưới 5 triệu</a></li>
-						  		<li><a class="dropdown-item filter-price"data-start="5000000" data-end="10000000">Từ 5-10 triệu</a></li>
-						  		<li><a class="dropdown-item filter-price"data-start="10000000" data-end="20000000">Từ 10-20 triệu</a></li>
-						  		<li><a class="dropdown-item filter-price"data-start="20000000" data-end="1000000000">Trên 20 triệu</a></li>
-						  	</ul>
-						</div>
-					</div>					
-				</div>
-			</div>
-			<p class="hetSp" style="font-size: -webkit-xxx-large;display: none">Không có sản phẩm phù hợp</p>
-			<div class="row list-product">
-				
-			</div>
+		<div class="col-lg-7 col-xm-8 col-12">
+			<h2>Sơ đồ phân cấp</h2>
+			<img style="width: 100%;margin-bottom: 30px;" src="../images/sitemap (3).png">
+			<h2>Sơ đồ liên kết giữa các trang</h2>
+			<img style="width: 100%" src="../images/sitemap (2).png">
 		</div>
 	</div>
 	<!-- end content -->
@@ -139,21 +83,5 @@
 		</div>
 	</div>
 	<!-- end footer -->
-	<script src="../js/jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="../js/data.js"></script>
-	<script src="../js/main.js"></script>
-	<script src="../js/sanpham.js"></script>
-	<script src="../js/timkiem.js"></script>
-	</script>
-	<script type="text/javascript">
-		url = window.location.href;
-		function start(){
-
-			document.title = "Kết quả tìm kiếm cho "+localStorage["search"];
-			search();
-		}
-		start();
-		
-	</script>
 </body>
 </html>
