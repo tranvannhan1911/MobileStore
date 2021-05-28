@@ -143,9 +143,10 @@
 			}catch{
 				account_list = new Array();
 			}
-			console.log(account_list);
+			// console.log(account_list);
 			for(var i =0; i<account_list.length; i++){
 				if(account_list[i]["phone"] == phone && account_list[i]["pass"] == pass){
+					// đăng nhập thành công
 					$('.msg').text("");
 					localStorage["login"] = 1;
 					localStorage["phone"] = phone;

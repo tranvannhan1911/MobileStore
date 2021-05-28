@@ -168,7 +168,10 @@
 	<script type="text/javascript">
 		url = window.location.href;
 		function start(){
-
+			var cart = get_cart();
+			if(cart.length == 0){
+				window.location.href = "index.html";
+			}
 			console.log(JSON.parse(localStorage["cart"]));
 			renderData();
 		}

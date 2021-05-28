@@ -19,6 +19,7 @@ function getParams(url){
 }
 
 function render_product(product){
+	document.title = product["name"];
 	$('.breadcrumb > .active').text(product["name"]);
 	$('.phone-name').text(product["name"]);
 	img_product = $('img.img-product');
